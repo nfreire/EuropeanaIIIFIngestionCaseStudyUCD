@@ -1,0 +1,143 @@
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+  <!--Object Type: object-->
+  <titleInfo supplied="yes">
+    <title>Photograph of Sir Charles Petrie, Michael Tierney and M. MacWhite.</title>
+  </titleInfo>
+  <name type="corporate">
+    <namePart>Independent Newspapers Ltd</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/pht#concept"/>
+      <roleTerm type="text" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/pht#concept"/>
+    </role>
+  </name>
+  <typeOfResource>still image</typeOfResource>
+  <genre authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm007721">Photographs</genre>
+  <originInfo>
+    <place>
+      <placeTerm type="text">Dublin</placeTerm>
+    </place>
+    <dateCreated>10 December 1953</dateCreated>
+    <dateCreated encoding="iso8601" keyDate="yes">1953-12-10</dateCreated>
+  </originInfo>
+  <language>
+    <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+    <languageTerm type="text" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>1 still image : digital</extent>
+  </physicalDescription>
+  <note type="conservation history">Removed from an album.</note>
+  <subject>
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/22645127">
+      <namePart>Petrie, Charles, Sir, 1895-</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/65591956">
+      <namePart>Tierney, Michael, 1894-1975</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal">
+      <namePart>MacWhite, M.</namePart>
+    </name>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm008674">
+    <topic>Receptions</topic>
+    <geographic>Dublin (Ireland)</geographic>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm004759">
+    <topic>Group portraits</topic>
+  </subject>
+  <identifier type="hdl" invalid="yes">hdl:10151/OB_0000417_AR</identifier>
+  <identifier type="local">OB_0000417_AR</identifier>
+  <identifier type="EADseries">LA30/PH-B-I-b:29</identifier>
+  <location>
+    <physicalLocation type="institution">UCD School of History and Archives</physicalLocation>
+    <physicalLocation type="repository">UCD Archives</physicalLocation>
+    <physicalLocation type="collection">Tierney/MacNeill Photographs</physicalLocation>
+    <physicalLocation type="originalRef">LA30/PH/29</physicalLocation>
+    <url>http://dx.doi.org/info:fedora/ivrla:34550</url>
+  </location>
+  <note type="funding">Funded by the Higher Education Authority, Programme for Research in Third-Level Institutions (PRTLI), Cycle 3.</note>
+  <extension>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+      <dc:relation>info:eu-repo/grantAgreement/HEA/Programme for Research in Third-Level Institutions, Cycle 3//IE/Irish Virtual Research Library and Archive/IVRLA</dc:relation>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+    </oai_dc:dc>
+  </extension>
+  <recordInfo>
+    <recordCreationDate encoding="iso8601">2005-11-02</recordCreationDate>
+    <recordContentSource>UCD Library, University College Dublin</recordContentSource>
+    <recordOrigin>Description created by staff of UCD Library, University College Dublin based on the original listing in "The Barbara Miller Map Room : Catalogue Listing of Map Collections".</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+      <languageTerm type="text" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+      <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+      <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+    </languageOfCataloging>
+    <recordContentSource>UCD Library, University College Dublin</recordContentSource>
+    <recordOrigin>Descriptions created by IVRLA project staff, UCD Library, University College Dublin.</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+      <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+      <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  <accessCondition type="useAndReproduction" displayLabel="Commercial use details" xlink:href="http://digital.ucd.ie/terms/">To use for commercial purposes, please contact the UCD Digital Library</accessCondition>
+  <accessCondition type="useAndReproduction" displayLabel="Copyright of digital resource">University College Dublin</accessCondition>
+  <accessCondition type="use and reproduction" displayLabel="Creative Commons licence" xlink:href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Use of this resource is governed by the terms and conditions of the Creative Commons "Attribution-NonCommercial-NoDerivatives 4.0 International" License &lt;https://creativecommons.org/licenses/by-nc-nd/4.0/&gt;</accessCondition>
+  <accessCondition type="use and reproduction" displayLabel="Additional information" xlink:href="http://digital.ucd.ie/terms/">For additional information regarding use or reproduction of this item please see http://digital.ucd.ie/terms/ or contact UCD Archives, UCD School of History and Archives, University College Dublin, Belfield, Dublin 4, Ireland.</accessCondition>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Tierney/MacNeill Photographs</title>
+    </titleInfo>
+    <typeOfResource collection="yes">still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:34550</identifier>
+    <identifier type="local">EAD_0000020_AR</identifier>
+    <identifier type="doi">doi:10.7925/drs1.ivrla_34550</identifier>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Photograph of Sir Charles Petrie, Michael Tierney and M MacWhite</title>
+      <subTitle>Front</subTitle>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <reformattingQuality>preservation</reformattingQuality>
+    <physicalDescription>
+      <extent>1 still image : digital</extent>
+      <extent unit="pixels">2830x3800</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <identifier type="uri">info:fedora/ivrla:34628</identifier>
+    <identifier type="local">AR_PM_0002240</identifier>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Photograph of Sir Charles Petrie, Michael Tierney and M MacWhite</title>
+      <subTitle>Back</subTitle>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <reformattingQuality>preservation</reformattingQuality>
+    <physicalDescription>
+      <extent>1 still image : digital</extent>
+      <extent unit="pixels">2867x3838</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <identifier type="uri">info:fedora/ivrla:34629</identifier>
+    <identifier type="local">AR_PM_0002241</identifier>
+  </relatedItem>
+  <identifier type="uri">info:fedora/ivrla:34627</identifier>
+  <identifier type="doi">doi:10.7925/drs1.ivrla_34627</identifier>
+</mods>

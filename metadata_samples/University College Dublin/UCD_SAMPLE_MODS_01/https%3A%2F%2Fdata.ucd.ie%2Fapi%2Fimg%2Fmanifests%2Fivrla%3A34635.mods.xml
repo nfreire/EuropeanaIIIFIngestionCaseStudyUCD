@@ -1,0 +1,198 @@
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+  <!--Object Type: object-->
+  <titleInfo supplied="yes">
+    <title>Group photograph taken in the National University of Ireland offices on Merrion Square (?).</title>
+  </titleInfo>
+  <name type="corporate" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/144709869">
+    <namePart>Irish Times, Ltd. (Dublin, Ireland)</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/pht#concept"/>
+      <roleTerm type="text" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/pht#concept"/>
+    </role>
+  </name>
+  <typeOfResource>still image</typeOfResource>
+  <genre authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm007721">Photographs</genre>
+  <originInfo>
+    <place>
+      <placeTerm type="text">Dublin</placeTerm>
+    </place>
+    <dateCreated>1956</dateCreated>
+    <dateCreated encoding="iso8601" keyDate="yes">1956</dateCreated>
+  </originInfo>
+  <subject>
+    <name type="corporate" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/157052388">
+      <namePart>National University of Ireland</namePart>
+    </name>
+    <geographic>49 Merrion Square East, Dublin 2, Co. Dublin, Ireland</geographic>
+    <cartographics>
+      <projection>WGS84 (EPSG:4326)</projection>
+      <coordinates>53.3383757,-6.2472168</coordinates>
+    </cartographics>
+  </subject>
+  <physicalDescription>
+    <extent>1 still image : digital</extent>
+  </physicalDescription>
+  <note type="conservation history">Removed from an album.</note>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm008933">
+    <name type="corporate" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/157052388">
+      <namePart>National University of Ireland</namePart>
+    </name>
+    <topic>Rites &amp; ceremonies</topic>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm003790">
+    <name type="corporate" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/157052388">
+      <namePart>National University of Ireland</namePart>
+    </name>
+    <topic>Facilities</topic>
+  </subject>
+  <subject>
+    <name type="personal">
+      <namePart>Hoagy, Jeremiah Joseph</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/65591956">
+      <namePart>Tierney, Michael, 1894-1975</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/52569828">
+      <namePart>McQuaid, John Charles, 1895-1973</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/44341843">
+      <namePart>De Valera, Eamonn, 1882-1975</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal">
+      <namePart>Burnsville, Henry L. (Henry Leo), 1887-1960</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal" authority="dbpedia" authorityURI="http://live.dbpedia.org/" valueURI="http://live.dbpedia.org/page/Michael_Hayes_(politician)">
+      <namePart>Hayes, Michael, 1889-1976</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal">
+      <namePart>MacHale, Joseph P.</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal">
+      <namePart>Dune, Patrick, 1891-1988</namePart>
+    </name>
+  </subject>
+  <subject authority="lcsh">
+    <name type="personal">
+      <namePart>De Bran, Pádraig</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/94210940">
+      <namePart>Kissane, Edward, 1886-1959</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal">
+      <namePart>Organ, John D.</namePart>
+    </name>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm002282">
+    <topic>College administrators</topic>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm009220">
+    <topic>Scholars</topic>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm010592">
+    <topic>Teachers</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm003684">
+    <topic>Events</topic>
+    <geographic>Dublin (Ireland)</geographic>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm008957">
+    <topic>Robes</topic>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm004759">
+    <topic>Group portraits</topic>
+  </subject>
+  <identifier type="hdl" invalid="yes">hdl:10151/OB_0000420_AR</identifier>
+  <identifier type="local">OB_0000420_AR</identifier>
+  <identifier type="EADseries">LA30/PH-B-I-b:32</identifier>
+  <location>
+    <physicalLocation type="institution">UCD School of History and Archives</physicalLocation>
+    <physicalLocation type="repository">UCD Archives</physicalLocation>
+    <physicalLocation type="collection">Tierney/MacNeill Photographs</physicalLocation>
+    <physicalLocation type="originalRef">LA30/PH/32</physicalLocation>
+    <url>http://dx.doi.org/info:fedora/ivrla:34550</url>
+  </location>
+  <note type="funding">Funded by the Higher Education Authority, Programme for Research in Third-Level Institutions (PRTLI), Cycle 3.</note>
+  <extension>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+      <dc:relation>info:eu-repo/grantAgreement/HEA/Programme for Research in Third-Level Institutions, Cycle 3//IE/Irish Virtual Research Library and Archive/IVRLA</dc:relation>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+    </oai_dc:dc>
+  </extension>
+  <recordInfo>
+    <recordCreationDate encoding="iso8601">2005-11-02</recordCreationDate>
+    <recordContentSource>UCD Library, University College Dublin</recordContentSource>
+    <recordOrigin>Description created by staff of UCD Library, University College Dublin based on the original listing in "The Barbara Miller Map Room : Catalogue Listing of Map Collections".</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+      <languageTerm type="text" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+      <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+      <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+    </languageOfCataloging>
+    <recordContentSource>UCD Library, University College Dublin</recordContentSource>
+    <recordOrigin>Descriptions created by IVRLA project staff, UCD Library, University College Dublin.</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+      <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+      <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  <accessCondition type="useAndReproduction" displayLabel="Commercial use details" xlink:href="http://digital.ucd.ie/terms/">To use for commercial purposes, please contact the UCD Digital Library</accessCondition>
+  <accessCondition type="useAndReproduction" displayLabel="Copyright of digital resource">University College Dublin</accessCondition>
+  <accessCondition type="use and reproduction" displayLabel="Creative Commons licence" xlink:href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Use of this resource is governed by the terms and conditions of the Creative Commons "Attribution-NonCommercial-NoDerivatives 4.0 International" License &lt;https://creativecommons.org/licenses/by-nc-nd/4.0/&gt;</accessCondition>
+  <accessCondition type="use and reproduction" displayLabel="Additional information" xlink:href="http://digital.ucd.ie/terms/">For additional information regarding use or reproduction of this item please see http://digital.ucd.ie/terms/ or contact UCD Archives, UCD School of History and Archives, University College Dublin, Belfield, Dublin 4, Ireland.</accessCondition>
+  <language>
+    <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+    <languageTerm type="text" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+  </language>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Tierney/MacNeill Photographs</title>
+    </titleInfo>
+    <typeOfResource collection="yes">still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:34550</identifier>
+    <identifier type="local">EAD_0000020_AR</identifier>
+    <identifier type="doi">doi:10.7925/drs1.ivrla_34550</identifier>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Group photograph taken in the National University of Ireland offices on Merrion Square (?)</title>
+      <subTitle>Front</subTitle>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <reformattingQuality>preservation</reformattingQuality>
+    <physicalDescription>
+      <extent>1 still image : digital</extent>
+      <extent unit="pixels">2868x3764</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <identifier type="uri">info:fedora/ivrla:34636</identifier>
+    <identifier type="local">AR_PM_0002245</identifier>
+  </relatedItem>
+  <identifier type="uri">info:fedora/ivrla:34635</identifier>
+  <identifier type="doi">doi:10.7925/drs1.ivrla_34635</identifier>
+</mods>

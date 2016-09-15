@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+  <!--Object Type: object-->
+  <titleInfo>
+    <title>Processional Cross</title>
+  </titleInfo>
+  <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/306426252">
+    <namePart>Krasnodębska-D'Aughton, Małgorzata</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/pht#concept">pht</roleTerm>
+      <roleTerm type="text" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/pht#concept">Photographer</roleTerm>
+    </role>
+  </name>
+  <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/306426252">
+    <namePart>Krasnodębska-D'Aughton, Małgorzata</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/res">res</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/res">Researcher</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>Dawson, Elizabeth</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/clb">clb</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/clb">Collaborator</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>Keenan, Brian</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/dtm">dtm</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/dtm">Data manager</roleTerm>
+    </role>
+  </name>
+  <genre authority="gmgpc" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm002781">Crucifixes</genre>
+  <originInfo>
+    <place>
+      <placeTerm type="text">Dublin: National Museum of Ireland, Collins Barracks</placeTerm>
+    </place>
+    <publisher>UCD-OFM Partnership - Copyright</publisher>
+    <dateCreated>1480</dateCreated>
+  </originInfo>
+  <typeOfResource>still image</typeOfResource>
+  <typeOfResource>three dimensional object</typeOfResource>
+  <physicalDescription>
+    <extent>18 photographs</extent>
+    <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+    <internetMediaType>image/jpeg</internetMediaType>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <reformattingQuality>preservation</reformattingQuality>
+    <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+  </physicalDescription>
+  <accessCondition type="copyright">© University College Dublin, National University of Ireland, Dublin. Copyright and reproduction rights for all items in this collection are held by University College Dublin and administered by the
+      UCD Mícheál Ó Cléirigh Institute, University College Dublin, Belfield, Dublin 4, Ireland.</accessCondition>
+  <accessCondition type="use and reproduction" xlink:href="http://creativecommons.org/licenses/by-nc-sa/3.0/ie/">Use of this resource is governed by the terms and conditions of the Creative Commons "Attribution-NonCommercial-ShareAlike"
+      License (http://creativecommons.org/licenses/by-nc-sa/3.0/ie/)</accessCondition>
+  <accessCondition type="use and reproduction" displayLabel="Additional Information" xlink:href="http://digital.ucd.ie/terms/">Please contact the UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation for further
+      information: UCD Mícheál Ó Cléirigh Institute, University College Dublin, Belfield, Dublin 4, Ireland.</accessCondition>
+  <note>Preserved in good condition.</note>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85112608#concept">
+    <topic>Religious articles</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85107142#concept">
+    <topic>Processional crosses</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85067966#concept">
+    <geographic>Ireland</geographic>
+    <topic>Church history</topic>
+  </subject>
+  <subject authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/147415964">
+    <topic>Franciscans</topic>
+    <geographic>Irish Province</geographic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85051969#concept">
+    <topic>Friars</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject>
+    <topic>Mendicant Orders</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <location>
+    <url access="object in context" usage="primary">http://dx.doi.org/10.7925/drs1.ivrla_30186</url>
+  </location>
+  <location>
+    <physicalLocation type="institution">University College Dublin</physicalLocation>
+    <physicalLocation type="repository">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation</physicalLocation>
+    <physicalLocation type="collection">Material Culture of the Mendicant Orders in Ireland</physicalLocation>
+    <physicalLocation type="originalRef">FR_12_01</physicalLocation>
+  </location>
+  <identifier type="hdl" invalid="yes">hdl:10151/OB_5100020_CI</identifier>
+  <identifier type="local">OB_5100020_CI</identifier>
+  <identifier type="EADseries">IVRLA30:20</identifier>
+  <recordInfo>
+    <recordCreationDate encoding="iso8601">2009-12-08</recordCreationDate>
+    <recordContentSource>UCD Library, University College Dublin</recordContentSource>
+    <recordOrigin>Descriptions created by IVRLA project staff, UCD Library, University College Dublin.</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+      <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+      <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  <language>
+    <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org/" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+    <languageTerm type="text" authority="iso639-3" authorityURI="http://www.lexvo.org/" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+    <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org/" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+    <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org/" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+  </language>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Material Culture of the Mendicant Orders in Ireland</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:29864</identifier>
+    <identifier type="local">EAD_0000044_CI</identifier>
+    <identifier type="doi">doi:10.7925/drs1.ivrla_29864</identifier>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30187</identifier>
+    <identifier type="local">CI_PM_5100303</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">7.3</extent>
+      <extent unit="pixels">1786x1433</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30188</identifier>
+    <identifier type="local">CI_PM_5100304</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">2.2</extent>
+      <extent unit="pixels">1835x1233</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30189</identifier>
+    <identifier type="local">CI_PM_5100305</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">8.1</extent>
+      <extent unit="pixels">1740x1627</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30190</identifier>
+    <identifier type="local">CI_PM_5100306</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">7.6</extent>
+      <extent unit="pixels">1952x1357</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30191</identifier>
+    <identifier type="local">CI_PM_5100307</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">8.3</extent>
+      <extent unit="pixels">1715x1690</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30192</identifier>
+    <identifier type="local">CI_PM_5100308</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">15</extent>
+      <extent unit="pixels">1952x2608</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30193</identifier>
+    <identifier type="local">CI_PM_5100309</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">11</extent>
+      <extent unit="pixels">2576x1542</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30194</identifier>
+    <identifier type="local">CI_PM_5100310</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">15</extent>
+      <extent unit="pixels">1952x2608</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30195</identifier>
+    <identifier type="local">CI_PM_5100311</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">15</extent>
+      <extent unit="pixels">1952x2608</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30196</identifier>
+    <identifier type="local">CI_PM_5100312</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">15</extent>
+      <extent unit="pixels">2608x1952</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30197</identifier>
+    <identifier type="local">CI_PM_5100313</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">2.1</extent>
+      <extent unit="pixels">1952x1147</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30198</identifier>
+    <identifier type="local">CI_PM_5100314</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">15</extent>
+      <extent unit="pixels">1952x2608</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30199</identifier>
+    <identifier type="local">CI_PM_5100315</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">8.4</extent>
+      <extent unit="pixels">1652x1764</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30200</identifier>
+    <identifier type="local">CI_PM_5100316</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.5</extent>
+      <extent unit="pixels">1682x932</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30201</identifier>
+    <identifier type="local">CI_PM_5100317</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">3.3</extent>
+      <extent unit="pixels">653x1768</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30202</identifier>
+    <identifier type="local">CI_PM_5100318</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">15</extent>
+      <extent unit="pixels">1952x2608</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30203</identifier>
+    <identifier type="local">CI_PM_5100319</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">15</extent>
+      <extent unit="pixels">1952x2608</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Processional Cross</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30204</identifier>
+    <identifier type="local">CI_PM_5100320</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">15</extent>
+      <extent unit="pixels">1952x2608</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <identifier type="uri">info:fedora/ivrla:30186</identifier>
+  <identifier type="doi">doi:10.7925/drs1.ivrla_30186</identifier>
+</mods>

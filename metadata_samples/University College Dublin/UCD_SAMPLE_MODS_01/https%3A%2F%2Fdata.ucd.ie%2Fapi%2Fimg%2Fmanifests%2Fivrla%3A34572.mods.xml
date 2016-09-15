@@ -1,0 +1,204 @@
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+  <!--Object Type: object-->
+  <titleInfo supplied="yes">
+    <title>Photograph of Simon Coleman's painting of the first meeting of the Council of State on 8 January 1940.</title>
+  </titleInfo>
+  <name type="corporate">
+    <namePart>Brown &amp; Nolan (Firm)</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/pht#concept"/>
+      <roleTerm type="text" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/pht#concept"/>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>Coleman, Simon, 1916-1995</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/art">art</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/art">Artist</roleTerm>
+    </role>
+  </name>
+  <typeOfResource>still image</typeOfResource>
+  <genre authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm007721">Photographs</genre>
+  <originInfo>
+    <place>
+      <placeTerm type="text">[Dublin]</placeTerm>
+    </place>
+    <dateCreated>1945</dateCreated>
+    <dateCreated encoding="iso8601" keyDate="yes">1945</dateCreated>
+  </originInfo>
+  <subject>
+    <name type="corporate">
+      <namePart>Newman House (Dublin, Ireland)</namePart>
+    </name>
+    <geographic>86 St. Stephen's Green, Dublin</geographic>
+    <cartographics>
+      <projection>WGS84 (EPSG:4326)</projection>
+      <coordinates>53.3366831,-6.2600866</coordinates>
+      <coordinates>northlimit=53.3380321; westlimit=-6.2614356; eastlimit=-6.2587376; southlimit=53.3353341</coordinates>
+    </cartographics>
+  </subject>
+  <language>
+    <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+    <languageTerm type="text" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>1 still image : digital</extent>
+  </physicalDescription>
+  <note>Mounted.</note>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/sh2002011434#concept" valueURI="http://id.loc.gov/authorities/subjects/sh2002011434">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/65591956">
+      <namePart>Tierney, Michael, 1894-1975</namePart>
+    </name>
+    <topic>Political activity</topic>
+  </subject>
+  <subject>
+    <name type="corporate">
+      <namePart>Council of State (Ireland)</namePart>
+    </name>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/sh2002011434#concept" valueURI="http://id.loc.gov/authorities/subjects/sh2002011434">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/12310055">
+      <namePart>Hyde, Douglas, 1860-1949</namePart>
+    </name>
+    <topic>Political activity</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/sh2002011434#concept" valueURI="http://id.loc.gov/authorities/subjects/sh2002011434">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/44341843">
+      <namePart>De Valera, Eamonn, 1882-1975</namePart>
+    </name>
+    <topic>Political activity</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/sh2002011434#concept" valueURI="http://id.loc.gov/authorities/subjects/sh2002011434">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/11908904">
+      <namePart>Ó Ceallaigh, Seán T. (Seán Tomás), 1882-1966</namePart>
+    </name>
+    <topic>Political activity</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/sh2002011434#concept" valueURI="http://id.loc.gov/authorities/subjects/sh2002011434">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/57418572">
+      <namePart>Mulcahy, Richard, 1886-1971</namePart>
+    </name>
+    <topic>Political activity</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/sh2002011434#concept" valueURI="http://id.loc.gov/authorities/subjects/sh2002011434">
+    <name type="personal" authority="dbpedia" authorityURI="http://dbpedia.org/" valueURI="http://dbpedia.org/resource/William_Norton">
+      <namePart>Norton, William, 1900-1963</namePart>
+    </name>
+    <topic>Political activity</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/sh2002011434#concept" valueURI="http://id.loc.gov/authorities/subjects/sh2002011434">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/56148206">
+      <namePart>Dillon, James, 1902-1986</namePart>
+    </name>
+    <topic>Political activity</topic>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm004926">
+    <topic>Heads of state</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm010083">
+    <topic>Statesmen</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm008016">
+    <topic>Politicians</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm004759">
+    <topic>Group portraits</topic>
+  </subject>
+  <subject authority="lctgm" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials#conceptscheme" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm008082">
+    <topic>Portrait paintings</topic>
+  </subject>
+  <identifier type="hdl" invalid="yes">hdl:10151/OB_0000397_AR</identifier>
+  <identifier type="local">OB_0000397_AR</identifier>
+  <identifier type="EADseries">LA30/PH-A:9</identifier>
+  <location>
+    <physicalLocation type="institution">UCD School of History and Archives</physicalLocation>
+    <physicalLocation type="repository">UCD Archives</physicalLocation>
+    <physicalLocation type="collection">Tierney/MacNeill Photographs</physicalLocation>
+    <physicalLocation type="originalRef">LA30/PH/9</physicalLocation>
+    <url>http://dx.doi.org/info:fedora/ivrla:34550</url>
+  </location>
+  <note type="funding">Funded by the Higher Education Authority, Programme for Research in Third-Level Institutions (PRTLI), Cycle 3.</note>
+  <extension>
+    <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+      <dc:relation>info:eu-repo/grantAgreement/HEA/Programme for Research in Third-Level Institutions, Cycle 3//IE/Irish Virtual Research Library and Archive/IVRLA</dc:relation>
+      <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+    </oai_dc:dc>
+  </extension>
+  <recordInfo>
+    <recordCreationDate encoding="iso8601">2005-11-02</recordCreationDate>
+    <recordContentSource>UCD Library, University College Dublin</recordContentSource>
+    <recordOrigin>Description created by staff of UCD Library, University College Dublin based on the original listing in "The Barbara Miller Map Room : Catalogue Listing of Map Collections".</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+      <languageTerm type="text" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+      <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+      <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+    </languageOfCataloging>
+    <recordContentSource>UCD Library, University College Dublin</recordContentSource>
+    <recordOrigin>Descriptions created by IVRLA project staff, UCD Library, University College Dublin.</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+      <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+      <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  <accessCondition type="useAndReproduction" displayLabel="Commercial use details" xlink:href="http://digital.ucd.ie/terms/">To use for commercial purposes, please contact the UCD Digital Library</accessCondition>
+  <accessCondition type="useAndReproduction" displayLabel="Copyright of digital resource">University College Dublin</accessCondition>
+  <accessCondition type="use and reproduction" displayLabel="Creative Commons licence" xlink:href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Use of this resource is governed by the terms and conditions of the Creative Commons "Attribution-NonCommercial-NoDerivatives 4.0 International" License &lt;https://creativecommons.org/licenses/by-nc-nd/4.0/&gt;</accessCondition>
+  <accessCondition type="use and reproduction" displayLabel="Additional information" xlink:href="http://digital.ucd.ie/terms/">For additional information regarding use or reproduction of this item please see http://digital.ucd.ie/terms/ or contact UCD Archives, UCD School of History and Archives, University College Dublin, Belfield, Dublin 4, Ireland.</accessCondition>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Tierney/MacNeill Photographs</title>
+    </titleInfo>
+    <typeOfResource collection="yes">still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:34550</identifier>
+    <identifier type="local">EAD_0000020_AR</identifier>
+    <identifier type="doi">doi:10.7925/drs1.ivrla_34550</identifier>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Photograph of Simon Coleman's painting of the first meeting of the Council of State on 8 January 1940</title>
+      <subTitle>Front</subTitle>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <reformattingQuality>preservation</reformattingQuality>
+    <physicalDescription>
+      <extent>1 still image : digital</extent>
+      <extent unit="pixels">3035x3834</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <identifier type="uri">info:fedora/ivrla:34573</identifier>
+    <identifier type="local">AR_PM_0002205</identifier>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Photograph of Simon Coleman's painting of the first meeting of the Council of State on 8 January 1940</title>
+      <subTitle>Back</subTitle>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <reformattingQuality>preservation</reformattingQuality>
+    <physicalDescription>
+      <extent>1 still image : digital</extent>
+      <extent unit="pixels">3057x3895</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <identifier type="uri">info:fedora/ivrla:34574</identifier>
+    <identifier type="local">AR_PM_0002206</identifier>
+  </relatedItem>
+  <identifier type="uri">info:fedora/ivrla:34572</identifier>
+  <identifier type="doi">doi:10.7925/drs1.ivrla_34572</identifier>
+</mods>

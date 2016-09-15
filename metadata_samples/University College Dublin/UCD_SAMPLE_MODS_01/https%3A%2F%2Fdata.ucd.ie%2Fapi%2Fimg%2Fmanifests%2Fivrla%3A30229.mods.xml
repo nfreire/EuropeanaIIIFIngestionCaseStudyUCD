@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+  <!--Object Type: object-->
+  <titleInfo>
+    <title>Malachy O'Queely Chalice</title>
+  </titleInfo>
+  <name type="personal">
+    <namePart>O'Queely, Malachy</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/asn">asn</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/asn">Associated name</roleTerm>
+    </role>
+  </name>
+  <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/306426252">
+    <namePart>Krasnodębska-D'Aughton, Małgorzata</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/pht#concept">pht</roleTerm>
+      <roleTerm type="text" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/pht#concept">Photographer</roleTerm>
+    </role>
+  </name>
+  <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/306426252">
+    <namePart>Krasnodębska-D'Aughton, Małgorzata</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/res">res</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/res">Researcher</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>Dawson, Elizabeth</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/clb">clb</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/clb">Collaborator</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>Keenan, Brian</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/dtm">dtm</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/dtm">Data manager</roleTerm>
+    </role>
+  </name>
+  <genre authority="gmgpc" authorityURI="http://id.loc.gov/vocabulary/graphicMaterials" valueURI="http://id.loc.gov/vocabulary/graphicMaterials/tgm001875">Chalices</genre>
+  <originInfo>
+    <place>
+      <placeTerm type="text">Dublin: National Museum of Ireland, Collins Barracks</placeTerm>
+    </place>
+    <publisher>UCD-OFM Partnership - Copyright</publisher>
+    <dateCreated>1640</dateCreated>
+  </originInfo>
+  <typeOfResource>still image</typeOfResource>
+  <typeOfResource>three dimensional object</typeOfResource>
+  <physicalDescription>
+    <extent>25 photographs</extent>
+    <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+    <internetMediaType>image/jpeg</internetMediaType>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <reformattingQuality>preservation</reformattingQuality>
+    <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+  </physicalDescription>
+  <accessCondition type="copyright">© University College Dublin, National University of Ireland, Dublin. Copyright and reproduction rights for all items in this collection are held by University College Dublin and administered by the
+      UCD Mícheál Ó Cléirigh Institute, University College Dublin, Belfield, Dublin 4, Ireland.</accessCondition>
+  <accessCondition type="use and reproduction" xlink:href="http://creativecommons.org/licenses/by-nc-sa/3.0/ie/">Use of this resource is governed by the terms and conditions of the Creative Commons "Attribution-NonCommercial-ShareAlike"
+      License (http://creativecommons.org/licenses/by-nc-sa/3.0/ie/)</accessCondition>
+  <accessCondition type="use and reproduction" displayLabel="Additional Information" xlink:href="http://digital.ucd.ie/terms/">Please contact the UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation for further
+      information: UCD Mícheál Ó Cléirigh Institute, University College Dublin, Belfield, Dublin 4, Ireland.</accessCondition>
+  <note>The chalice is preserved in good condition.</note>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85022389#concept">
+    <topic>Chalices</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85112608#concept">
+    <topic>Religious articles</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85067966#concept">
+    <geographic>Ireland</geographic>
+    <topic>Church history</topic>
+  </subject>
+  <subject authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/147415964">
+    <topic>Franciscans</topic>
+    <geographic>Irish Province</geographic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects/#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85051969#concept">
+    <topic>Friars</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject>
+    <topic>Mendicant Orders</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject>
+    <topic>Altar Plates</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject>
+    <topic>Church Silver</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <location>
+    <url access="object in context" usage="primary">http://dx.doi.org/10.7925/drs1.ivrla_30229</url>
+  </location>
+  <location>
+    <physicalLocation type="institution">University College Dublin</physicalLocation>
+    <physicalLocation type="repository">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation</physicalLocation>
+    <physicalLocation type="collection">Material Culture of the Mendicant Orders in Ireland</physicalLocation>
+    <physicalLocation type="originalRef">FR_12_06</physicalLocation>
+  </location>
+  <identifier type="hdl" invalid="yes">hdl:10151/OB_5100023_CI</identifier>
+  <identifier type="local">OB_5100023_CI</identifier>
+  <identifier type="EADseries">IVRLA30:23</identifier>
+  <recordInfo>
+    <recordCreationDate encoding="iso8601">2009-12-08</recordCreationDate>
+    <recordContentSource>UCD Library, University College Dublin</recordContentSource>
+    <recordOrigin>Descriptions created by IVRLA project staff, UCD Library, University College Dublin.</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+      <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+      <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  <language>
+    <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org/" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+    <languageTerm type="text" authority="iso639-3" authorityURI="http://www.lexvo.org/" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+    <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org/" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+    <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org/" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+  </language>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Material Culture of the Mendicant Orders in Ireland</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:29864</identifier>
+    <identifier type="local">EAD_0000044_CI</identifier>
+    <identifier type="doi">doi:10.7925/drs1.ivrla_29864</identifier>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30230</identifier>
+    <identifier type="local">CI_PM_5100343</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">2.6</extent>
+      <extent unit="pixels">2228x1223</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30231</identifier>
+    <identifier type="local">CI_PM_5100344</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">3.8</extent>
+      <extent unit="pixels">2322x1706</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30232</identifier>
+    <identifier type="local">CI_PM_5100345</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.2</extent>
+      <extent unit="pixels">2484x1789</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30233</identifier>
+    <identifier type="local">CI_PM_5100346</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.1</extent>
+      <extent unit="pixels">2253x1925</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30234</identifier>
+    <identifier type="local">CI_PM_5100347</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.0</extent>
+      <extent unit="pixels">2440x1733</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30235</identifier>
+    <identifier type="local">CI_PM_5100348</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.5</extent>
+      <extent unit="pixels">2414x1952</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30236</identifier>
+    <identifier type="local">CI_PM_5100349</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">3.9</extent>
+      <extent unit="pixels">2238x1823</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30237</identifier>
+    <identifier type="local">CI_PM_5100350</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.8</extent>
+      <extent unit="pixels">1934x2594</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30238</identifier>
+    <identifier type="local">CI_PM_5100351</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">3.8</extent>
+      <extent unit="pixels">1941x2036</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30239</identifier>
+    <identifier type="local">CI_PM_5100352</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="KB">866</extent>
+      <extent unit="pixels">848x1036</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30240</identifier>
+    <identifier type="local">CI_PM_5100353</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="KB">1633</extent>
+      <extent unit="pixels">1282x1297</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30241</identifier>
+    <identifier type="local">CI_PM_5100354</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.4</extent>
+      <extent unit="pixels">2505x1817</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30242</identifier>
+    <identifier type="local">CI_PM_5100355</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">3.5</extent>
+      <extent unit="pixels">2607x1399</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30243</identifier>
+    <identifier type="local">CI_PM_5100356</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.0</extent>
+      <extent unit="pixels">2555x1621</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30244</identifier>
+    <identifier type="local">CI_PM_5100357</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">3.4</extent>
+      <extent unit="pixels">1837x1960</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30245</identifier>
+    <identifier type="local">CI_PM_5100358</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.9</extent>
+      <extent unit="pixels">1952x2608</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30246</identifier>
+    <identifier type="local">CI_PM_5100359</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.3</extent>
+      <extent unit="pixels">1807x2498</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30247</identifier>
+    <identifier type="local">CI_PM_5100360</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.1</extent>
+      <extent unit="pixels">1719x2491</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30248</identifier>
+    <identifier type="local">CI_PM_5100361</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">3.7</extent>
+      <extent unit="pixels">1571x2436</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30249</identifier>
+    <identifier type="local">CI_PM_5100362</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.4</extent>
+      <extent unit="pixels">1768x2592</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30250</identifier>
+    <identifier type="local">CI_PM_5100363</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">3.7</extent>
+      <extent unit="pixels">1568x2483</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30251</identifier>
+    <identifier type="local">CI_PM_5100364</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">4.2</extent>
+      <extent unit="pixels">1681x2605</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30252</identifier>
+    <identifier type="local">CI_PM_5100365</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">3.8</extent>
+      <extent unit="pixels">1534x2599</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30253</identifier>
+    <identifier type="local">CI_PM_5100366</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">2.1</extent>
+      <extent unit="pixels">695x1028</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent" displayLabel="Alternative view">
+    <titleInfo>
+      <title>Malachy O'Queely Chalice</title>
+    </titleInfo>
+    <typeOfResource>still image</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:30254</identifier>
+    <identifier type="local">CI_PM_5100367</identifier>
+    <typeOfResource>three dimensional object</typeOfResource>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">3.0</extent>
+      <extent unit="pixels">916x1123</extent>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <reformattingQuality>preservation</reformattingQuality>
+      <note type="creation/production credits">UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, University College Dublin, Belfield, Dublin 4, Ireland</note>
+      <note>Photograph by Dr Małgorzata Krasnodębska-D'Aughton, for the UCD Mícheál Ó Cléirigh Institute.</note>
+      <note>Static display versions in JPEG format in three sizes are available.</note>
+      <note>JPEG2000 image derived from original JPEG using Kakadu image processing tools.</note>
+    </physicalDescription>
+  </relatedItem>
+  <identifier type="uri">info:fedora/ivrla:30229</identifier>
+  <identifier type="doi">doi:10.7925/drs1.ivrla_30229</identifier>
+</mods>
