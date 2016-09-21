@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+    
+    <!-- FROM /mods/titleInfo/title  -->
+    <!-- FROM Alternative views titles  -->
+    <dc:title>Paul O Mulgaoihe Chalice</dc:title>
+    
+    <!-- FROM /mods/location/physicalLocation[@type = 'collection'] -->
+    <!-- FROM /mods/relatedItem[@type = 'host']/titleInfo/title -->
+    <dc:title> Material Culture of the Mendicant Orders in Ireland </dc:title>
+    
+    <!-- CONCAT FROM /mods/subject/topic + /mods/subject/geographic -->
+    <!-- + URIs FROM /mods/subject/@valueURI -->
+    <dc:subject>Chalices--Ireland</dc:subject>
+    <dc:subject>Religious articles--Ireland</dc:subject>
+    <dc:subject>Ireland--Church history</dc:subject>
+    <dc:subject>Franciscans--Irish Province</dc:subject>
+    <dc:subject>Friars--Ireland</dc:subject>
+    <dc:subject>Mendicant Orders--Ireland</dc:subject>
+    <dc:subject>Altar Plates--Ireland</dc:subject>
+    <dc:subject>Church Silver--Ireland</dc:subject>
+    
+    <!-- FROM /mods/note (normalize-space OR substring-before DOT) -->
+    <dc:description>Unknown creator.</dc:description>
+    <dc:description>Chalice also known as the Paul Mulgeehy Chalice.</dc:description>
+    
+    <!-- FROM /mods/originInfo/publisher -->
+    <dc:publisher>UCD-OFM Partnership - Copyright</dc:publisher>
+    
+    <!-- FROM /mods/name[type="personal"]/namePart -->
+    <!-- + Role Literal /mods/name[type="personal"]/namePart/role/roleTerm[type="text"] -->
+    <!-- + VIAF URIs /mods/name[type="personal"]/@valueURI-->
+    <dc:contributor>Mulgeehy, Paul</dc:contributor>
+    <dc:contributor>Krasnodębska-D'Aughton, Małgorzata</dc:contributor>
+    <dc:contributor>Krasnodębska-D'Aughton, Małgorzata</dc:contributor>
+    <dc:contributor>Dawson, Elizabeth</dc:contributor>
+    <dc:contributor>Keenan, Brian</dc:contributor>
+    
+    <!-- FROM /mods/originInfo/dateCreated[keyDate="yes"] -->
+    <dc:date>1640</dc:date>
+    
+    <!-- FROM /mods/genre -->
+    <!-- + LOC URIs /mods/genre/@valueURI -->
+    <dc:type>Chalices</dc:type>
+    
+    <!-- ADDED in MAPPING -->
+    <!-- OR FROM /mods/typeOfResource[1] -->
+    <dc:type>StillImage</dc:type>
+    
+    <!-- FROM /mods/physicalDescription/extent -->
+    <dc:format>18 photographs</dc:format>
+    <!-- FROM /mods/physicalDescription/form -->
+    <dc:format>electronic</dc:format>
+    <!-- FROM /mods/physicalDescription/internetMediaType -->
+    <dc:format>image/jpeg</dc:format>
+    
+    <!-- FROM /mods/identifier[type="local"] -->
+    <dc:identifier>OB_5100001_CI</dc:identifier>
+    <!-- CONCAT FROM /mods/identifier[type="EADseries"] -->
+    <dc:identifier>EADseries:IVRLA30:1</dc:identifier>
+    <!-- SUBSTRING after /mods/identifier[type="uri"] , info:fedora/   -->
+    <dc:identifier>ivrla:29865</dc:identifier>
+    <!-- CONCAT FROM PREVIOUS ID -->
+    <dc:identifier>http://digital.ucd.ie/view/ivrla:29865</dc:identifier>
+    <!-- FROM /mods/identifier[type="doi"] -->
+    <dc:identifier>doi:10.7925/drs1.ivrla_29865</dc:identifier>
+    
+    <!-- FROM /mods/location[usage="primary"] -->
+    <dc:identifier>http://dx.doi.org/10.7925/drs1.ivrla_29865</dc:identifier>
+    
+    <!-- NEEDS PRECISION -->
+    <!-- FROM /mods/language  OR  /mods/recordInfo/languageOfCataloging -->
+    <!-- + Alignment to the ISO codes (Cf. Latin) -->
+    <!-- + error = code/text -->
+    <dc:language>eng</dc:language>
+    <dc:language>English</dc:language>
+    
+    <!-- FROM /mods/relatedItem[type="host"]/identifier[type="uri"] -->
+    <dc:relation>isMemberOf: info:fedora/ivrla:29864</dc:relation>
+    
+    <!-- FROM /mods/relatedItem[type="constituent"]/identifier[type="uri"] -->
+    <dc:relation>hasMember: info:fedora/ivrla:29866</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29867</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29868</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29869</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29870</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29871</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29872</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29873</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29874</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29875</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29876</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29877</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29878</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29879</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29880</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29881</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29882</dc:relation>
+    <dc:relation>hasMember: info:fedora/ivrla:29883</dc:relation>
+    
+    <!-- FROM /mods/subject/geographic + value comparison -->
+    <dc:coverage>Irish Province</dc:coverage>
+    <dc:coverage>Ireland</dc:coverage>
+    
+    <!-- FROM /mods/accessCondition -->
+    <!-- Need to map all these litterals ? -->
+    <dc:rights> © University College Dublin, National University of Ireland, Dublin. Copyright and
+        reproduction rights for all items in this collection are held by University College Dublin
+        and administered by the UCD Mícheál Ó Cléirigh Institute, University College Dublin,
+        Belfield, Dublin 4, Ireland. </dc:rights>
+    <dc:rights> Use of this resource is governed by the terms and conditions of the Creative Commons
+        "Attribution-NonCommercial-ShareAlike" License
+        (http://creativecommons.org/licenses/by-nc-sa/3.0/ie/) </dc:rights>
+    <dc:rights> Please contact the UCD Mícheál Ó Cléirigh Institute for the Study of Irish History
+        and Civilisation for further information: UCD Mícheál Ó Cléirigh Institute, University
+        College Dublin, Belfield, Dublin 4, Ireland. </dc:rights>
+    
+    <!-- FROM /mods/accessCondition/@xlink:href -->
+    <!-- FOR edm:rights -->
+    
+</oai_dc:dc>

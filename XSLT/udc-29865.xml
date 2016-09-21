@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:crm="http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.0.2_english_label.rdfs#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:doap="http://usefulinc.com/ns/doap#"
+         xmlns:edm="http://www.europeana.eu/schemas/edm/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+         xmlns:ore="http://www.openarchives.org/ore/terms/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:svcs="http://rdfs.org/sioc/services#"
+         xmlns:wgs84="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:xalan="http://xml.apache.org/xalan"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <edm:ProvidedCHO rdf:about="ivrla:29865"/>
+   <edm:WebResource rdf:about="https://iiif.ucd.ie/loris/ivrla:29866/full/full/0/default.jpg">
+      <dc:format>image/jpeg</dc:format>
+      <dcterms:extent xml:lang="en">1 still image : digital</dcterms:extent>
+      <dcterms:extent>2.7 MB</dcterms:extent>
+      <dcterms:extent>1314x727 pixels</dcterms:extent>
+      <dcterms:isReferencedBy rdf:resource="https://data.ucd.ie/api/img/manifests/ivrla:29865"/>
+      <svcs:has_service rdf:resource="https://iiif.ucd.ie/loris/ivrla:29866"/>
+   </edm:WebResource>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85022389#concept">
+      <skos:prefLabel xml:lang="en">Chalices</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85112608#concept">
+      <skos:prefLabel xml:lang="en">Religious articles</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85067966#concept">
+      <skos:prefLabel xml:lang="en">Church history</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://viaf.org/viaf/147415964">
+      <skos:prefLabel xml:lang="en">Franciscans</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85051969#concept">
+      <skos:prefLabel xml:lang="en">Friars</skos:prefLabel>
+   </skos:Concept>
+   <ore:Aggregation rdf:about="ivrla:29865_Aggregation">
+      <edm:aggregatedCHO rdf:resource="ivrla:29865"/>
+      <edm:dataProvider>Dublin: National Museum of Ireland, Collins Barracks</edm:dataProvider>
+      <edm:isShownAt rdf:resource="http://dx.doi.org/10.7925/drs1.ivrla_29865"/>
+      <edm:isShownBy rdf:resource="https://iiif.ucd.ie/loris/ivrla:29866/full/full/0/default.jpg"/>
+      <edm:object rdf:resource="https://iiif.ucd.ie/loris/ivrla:29866/full/600,/0/default.jpg"/>
+      <edm:provider>University College Dublin</edm:provider>
+      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/ie/"/>
+   </ore:Aggregation>
+   <ore:Proxy rdf:about="ivrla:29865">
+      <dc:description xml:lang="en">Physical location: University College Dublin, UCD Mícheál Ó Cléirigh Institute for the Study of Irish History and Civilisation, Material Culture of the Mendicant Orders in Ireland, Ref. FR_01_01</dc:description>
+      <dc:description xml:lang="en">Unknown creator.</dc:description>
+      <dc:description xml:lang="en">Chalice also known as the Paul Mulgeehy Chalice.</dc:description>
+      <dc:format xml:lang="en">18 photographs</dc:format>
+      <dc:format xml:lang="en">electronic</dc:format>
+      <dc:format>image/jpeg</dc:format>
+      <dc:identifier>OB_5100001_CI</dc:identifier>
+      <dc:identifier>EADseries:IVRLA30:1</dc:identifier>
+      <dc:identifier>ivrla:29865</dc:identifier>
+      <dc:identifier>http://digital.ucd.ie/view/ivrla:29865</dc:identifier>
+      <dc:identifier>doi:10.7925/drs1.ivrla_29865</dc:identifier>
+      <dc:language>eng</dc:language>
+      <dc:language>Latn</dc:language>
+      <dc:publisher>UCD-OFM Partnership - Copyright</dc:publisher>
+      <dc:rights xml:lang="en">© University College Dublin, National University of Ireland,
+    Dublin. Copyright and reproduction rights for all items in this collection are held by
+    University College Dublin and administered by the UCD Mícheál Ó Cléirigh Institute, University
+    College Dublin, Belfield, Dublin 4, Ireland.</dc:rights>
+      <dc:rights xml:lang="en">Use of this resource is
+    governed by the terms and conditions of the Creative Commons
+    "Attribution-NonCommercial-ShareAlike" License
+    (http://creativecommons.org/licenses/by-nc-sa/3.0/ie/)</dc:rights>
+      <dc:rights xml:lang="en">Please contact the UCD Mícheál Ó Cléirigh Institute
+    for the Study of Irish History and Civilisation for further information: UCD Mícheál Ó Cléirigh
+    Institute, University College Dublin, Belfield, Dublin 4, Ireland.</dc:rights>
+      <dc:source xml:lang="en">UCD Library, University College Dublin</dc:source>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85022389#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85112608#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85067966#concept"/>
+      <dc:subject rdf:resource="http://viaf.org/viaf/147415964"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85051969#concept"/>
+      <dc:subject xml:lang="en">Chalices--Ireland</dc:subject>
+      <dc:subject xml:lang="en">Religious articles--Ireland</dc:subject>
+      <dc:subject xml:lang="en">Church history--Ireland</dc:subject>
+      <dc:subject xml:lang="en">Franciscans--Irish Province</dc:subject>
+      <dc:subject xml:lang="en">Friars--Ireland</dc:subject>
+      <dc:subject xml:lang="en">Mendicant Orders--Ireland</dc:subject>
+      <dc:subject xml:lang="en">Altar Plates--Ireland</dc:subject>
+      <dc:subject xml:lang="en">Church Silver--Ireland</dc:subject>
+      <dc:title xml:lang="en">Paul O Mulgaoihe Chalice</dc:title>
+      <dc:type rdf:resource="http://id.loc.gov/vocabulary/graphicMaterials/tgm001875"/>
+      <dc:type xml:lang="en">Chalices</dc:type>
+      <dc:type xml:lang="en">still image</dc:type>
+      <dc:type xml:lang="en">three dimensional object</dc:type>
+      <dcterms:isPartOf rdf:resource="ivrla:29864"/>
+      <dcterms:spatial>Ireland</dcterms:spatial>
+      <dcterms:spatial>Irish Province</dcterms:spatial>
+      <edm:type>IMAGE</edm:type>
+   </ore:Proxy>
+   <edm:EuropeanaAggregation rdf:about="ivrla:29865_EuropeanaAggregation">
+      <edm:aggregatedCHO rdf:resource="ivrla:29865"/>
+      <edm:country>Ireland</edm:country>
+      <edm:language>en</edm:language>
+      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/ie/"/>
+   </edm:EuropeanaAggregation>
+   <svcs:Service rdf:about="https://iiif.ucd.ie/loris/ivrla:29866">
+      <dcterms:conformsTo rdf:resource="http://iiif.io/api/image"/>
+      <doap:implements rdf:resource="http://iiif.io/api/image/2/level2.json"/>
+   </svcs:Service>
+</rdf:RDF>
