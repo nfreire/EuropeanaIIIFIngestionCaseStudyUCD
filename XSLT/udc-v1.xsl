@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet exclude-result-prefixes="xsi xlink xml" version="2.0"
-    xpath-default-namespace="http://www.loc.gov/mods/v3" xmlns:adms="http://www.w3.org/ns/adms#"
-    xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:crm="http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.0.2_english_label.rdfs#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcat="http://www.w3.org/ns/dcat#"
-    xmlns:dcterms="http://purl.org/dc/terms/" xmlns:doap="http://usefulinc.com/ns/doap#"
-    xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
-    xmlns:mets="http://www.loc.gov/METS/" xmlns:mods="http://www.loc.gov/mods/v3"
-    xmlns:odrl="http://www.w3.org/ns/odrl/2/" xmlns:ore="http://www.openarchives.org/ore/terms/"
-    xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:svcs="http://rdfs.org/sioc/services#"
-    xmlns:wgs84="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:xalan="http://xml.apache.org/xalan"
-    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xml="http://www.w3.org/XML/1998/namespace"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet exclude-result-prefixes="xsi xlink xml" version="2.0" xpath-default-namespace="http://www.loc.gov/mods/v3" xmlns:adms="http://www.w3.org/ns/adms#"
+    xmlns:cc="http://creativecommons.org/ns#" xmlns:crm="http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.0.2_english_label.rdfs#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:doap="http://usefulinc.com/ns/doap#" xmlns:edm="http://www.europeana.eu/schemas/edm/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:mets="http://www.loc.gov/METS/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+    xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:svcs="http://rdfs.org/sioc/services#" xmlns:wgs84="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:xalan="http://xml.apache.org/xalan" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:output encoding="UTF-8" indent="yes"/>
 
@@ -94,20 +85,20 @@
         <map value="gr">gr</map>
     </xsl:variable>
 
-    <!-- Strings -->
+    <!-- Strings changed JBH -->
     <xsl:variable name="baseUrl_manifest">
-        <xsl:text>https://data.ucd.ie/api/img/manifests/ivrla:</xsl:text>
+        <xsl:text>https://data.ucd.ie/api/img/manifests/</xsl:text>
     </xsl:variable>
 
     <xsl:variable name="baseUrl_service">
-        <xsl:text>https://iiif.ucd.ie/loris/ivrla:</xsl:text>
+        <xsl:text>https://iiif.ucd.ie/loris/</xsl:text>
     </xsl:variable>
 
     <xsl:variable name="hqPicture">
         <!--<xsl:text>/full/full/0/default.png</xsl:text>-->
         <xsl:text>/full/full/0/default.jpg</xsl:text>
     </xsl:variable>
-    
+
     <xsl:variable name="thumb">
         <xsl:text>/full/600,/0/default.jpg</xsl:text>
     </xsl:variable>
@@ -122,6 +113,7 @@
     </xsl:variable>
 
     <xsl:variable name="rights">
+        <!-- QUESTION: is this licence a Europeana requirement? JBH -->
         <!--<xsl:if test="not(accessCondition/@displayLabel = 'Additional Information'])
             ">
             <xsl:value-of select="accessCondition/@xlink:href"/>
@@ -135,21 +127,17 @@
     </xsl:variable>
 
 
-
     <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
     <!-- DYNAMIC VARIABLES -->
     <!-- IDs -->
     <!--<xsl:variable name="object_id"
         select="substring-after(/mods/location/url[@usage = 'primary'], 'ivrla_')"/>-->
-    <xsl:variable name="object_id"
-        select="substring-after(/mods/identifier[@type = 'uri'], 'fedora/ivrla:')"/>
+    <xsl:variable name="object_id" select="substring-after(/mods/identifier[@type = 'uri'], 'fedora/')"/>
 
     <!--<xsl:variable name="europeana_id" select="concat('ivrla_', $object_id)"/>-->
-    <xsl:variable name="europeana_id"
-        select="substring-after(/mods/identifier[@type = 'uri'], 'fedora/')"/>
+    <xsl:variable name="europeana_id" select="substring-after(/mods/identifier[@type = 'uri'], 'fedora/')"/>
 
-    <xsl:variable name="resource_id"
-        select="substring-after(/mods/relatedItem[@type = 'constituent'][1]/identifier[@type = 'uri'], 'ivrla:')"/>
+    <xsl:variable name="resource_id" select="substring-after(/mods/relatedItem[@type = 'constituent'][1]/identifier[@type = 'uri'], 'info:fedora/')"/>
 
 
 
@@ -172,8 +160,7 @@
             <!-- Namespaces declaration -->
             <xsl:namespace name="adms">http://www.w3.org/ns/adms#</xsl:namespace>
             <xsl:namespace name="cc">http://creativecommons.org/ns#</xsl:namespace>
-            <xsl:namespace name="crm"
-                >http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.0.2_english_label.rdfs#</xsl:namespace>
+            <xsl:namespace name="crm">http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.0.2_english_label.rdfs#</xsl:namespace>
             <xsl:namespace name="dc">http://purl.org/dc/elements/1.1/</xsl:namespace>
             <xsl:namespace name="dcat">http://www.w3.org/ns/dcat#</xsl:namespace>
             <xsl:namespace name="dcterms">http://purl.org/dc/terms/</xsl:namespace>
@@ -214,13 +201,14 @@
                     <xsl:attribute name="rdf:about">
                         <xsl:value-of select="concat($baseUrl_service, $resource_id, $hqPicture)"/>
                     </xsl:attribute>
-                    
+
                     <!-- dc:format, id: 13 -->
                     <xsl:element name="dc:format">
                         <xsl:value-of select="$format"/>
                     </xsl:element>
 
                     <!-- dcterms:extent, id: xx -->
+                    <!--
                     <xsl:element name="dcterms:extent">
                         <xsl:attribute name="xml:lang">
                             <xsl:value-of select="'en'"/>
@@ -239,6 +227,33 @@
                             select="concat(/mods/relatedItem[@type = 'constituent'][1]/physicalDescription/extent[@unit = 'pixels'], ' pixels')"
                         />
                     </xsl:element>
+ -->
+
+                    <!-- dcterms:extent, id: xx -->
+                    <xsl:for-each select="/mods/relatedItem[@type = 'constituent'][1]/physicalDescription/extent">
+                        <xsl:choose>
+                            <xsl:when test="position() = 1">
+                                <xsl:element name="dcterms:extent">
+                                    <xsl:attribute name="xml:lang">
+                                        <xsl:value-of select="'en'"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="normalize-space(.)"/>
+                                </xsl:element>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:element name="dcterms:extent">
+                                    <xsl:choose>
+                                        <xsl:when test="@unit">
+                                            <xsl:value-of select="concat(., ' ', @unit)"/>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:value-of select="."/>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:element>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:for-each>
 
                     <!-- dcterms:isReferencedBy, id: 77 -->
                     <xsl:element name="dcterms:isReferencedBy">
@@ -320,8 +335,7 @@
                     <xsl:if test="$resource_id">
                         <xsl:element name="edm:isShownBy">
                             <xsl:attribute name="rdf:resource">
-                                <xsl:value-of
-                                    select="concat($baseUrl_service, $resource_id, $hqPicture)"/>
+                                <xsl:value-of select="concat($baseUrl_service, $resource_id, $hqPicture)"/>
                             </xsl:attribute>
                         </xsl:element>
                     </xsl:if>
@@ -331,9 +345,7 @@
                     <xsl:if test="$resource_id">
                         <xsl:element name="edm:object">
                             <xsl:attribute name="rdf:resource">
-                                <xsl:value-of
-                                    select="concat($baseUrl_service, $resource_id, $thumb)"
-                                />
+                                <xsl:value-of select="concat($baseUrl_service, $resource_id, $thumb)"/>
                             </xsl:attribute>
                         </xsl:element>
                     </xsl:if>
@@ -374,40 +386,40 @@
                         </xsl:for-each>
 
                         <!-- dc:description, id: 249 -->
-                            <!-- Physical Location -->
+                        <!-- Physical Location -->
+                        <xsl:element name="dc:description">
+                            <xsl:attribute name="xml:lang">
+                                <xsl:value-of select="'en'"/>
+                            </xsl:attribute>
+
+                            <xsl:text>Physical location: </xsl:text>
+                            <xsl:value-of
+                                select="
+                                    concat(
+                                    location/physicalLocation[@type = 'institution'],
+                                    ', ',
+                                    location/physicalLocation[@type = 'repository'],
+                                    ', ',
+                                    location/physicalLocation[@type = 'collection'],
+                                    ', Ref. ',
+                                    location/physicalLocation[@type = 'originalRef'])"
+                            />
+                        </xsl:element>
+
+                        <!-- Main Description -->
+                        <xsl:for-each select="note">
                             <xsl:element name="dc:description">
                                 <xsl:attribute name="xml:lang">
                                     <xsl:value-of select="'en'"/>
                                 </xsl:attribute>
-    
-                                <xsl:text>Physical location: </xsl:text>
-                                <xsl:value-of
-                                    select="
-                                        concat(
-                                        location/physicalLocation[@type = 'institution'],
-                                        ', ',
-                                        location/physicalLocation[@type = 'repository'],
-                                        ', ',
-                                        location/physicalLocation[@type = 'collection'],
-                                        ', Ref. ',
-                                        location/physicalLocation[@type = 'originalRef'])"
-                                />
+
+                                <xsl:value-of select="."/>
                             </xsl:element>
-    
-                            <!-- Main Description -->
-                            <xsl:for-each select="note">
-                                <xsl:element name="dc:description">
-                                    <xsl:attribute name="xml:lang">
-                                        <xsl:value-of select="'en'"/>
-                                    </xsl:attribute>
-    
-                                    <xsl:value-of select="."/>
-                                </xsl:element>
-                            </xsl:for-each>
+                        </xsl:for-each>
 
                         <!-- dc:format, id: xxx -->
                         <xsl:for-each select="physicalDescription">
-                            
+
                             <!-- MAIN FORMATs -->
                             <xsl:element name="dc:format">
                                 <xsl:attribute name="xml:lang">
@@ -415,61 +427,93 @@
                                 </xsl:attribute>
                                 <xsl:value-of select="extent"/>
                             </xsl:element>
-                            
+
                             <xsl:element name="dc:format">
                                 <xsl:attribute name="xml:lang">
                                     <xsl:value-of select="'en'"/>
                                 </xsl:attribute>
                                 <xsl:value-of select="form"/>
                             </xsl:element>
-                            
+
                             <!-- MANUALLY SELECTED FORMAT -->
                             <xsl:element name="dc:format">
                                 <!--<xsl:value-of
                                     select="internetMediaType"/>-->
                                 <xsl:value-of select="$format"/>
                             </xsl:element>
-                            
+
                         </xsl:for-each>
 
                         <!-- dc:identifier, id: 255 -->
-                            <!-- Local ID -->
+                        <!-- Local ID -->
+                        <xsl:element name="dc:identifier">
+                            <xsl:value-of select="identifier[@type = 'local']"/>
+                        </xsl:element>
+
+                        <!-- EAD ID -->
+                        <xsl:if test="identifier[@type = 'EADseries']">
                             <xsl:element name="dc:identifier">
-                                <xsl:value-of select="identifier[@type = 'local']"/>
+                                <xsl:value-of select="concat('EADseries:', identifier[@type = 'EADseries'])"/>
                             </xsl:element>
+                        </xsl:if>
+
+                        <!-- URI ID -->
+                        <xsl:element name="dc:identifier">
+                            <xsl:value-of select="$europeana_id"/>
+                        </xsl:element>
+
+                        <!-- URI Full ID -->
+                        <xsl:element name="dc:identifier">
+                            <xsl:value-of select="concat('http://digital.ucd.ie/view/', $object_id)"/>
+                        </xsl:element>
                         
-                            <!-- EAD ID -->
-                            <xsl:element name="dc:identifier">
-                                <xsl:value-of
-                                    select="concat('EADseries:', identifier[@type = 'EADseries'])"/>
-                            </xsl:element>
-                        
-                            <!-- URI ID -->
-                            <xsl:element name="dc:identifier">
-                                <xsl:value-of select="$europeana_id"/>
-                            </xsl:element>
-                        
-                            <!-- URI Full ID -->
-                            <xsl:element name="dc:identifier">
-                                <xsl:value-of
-                                    select="concat('http://digital.ucd.ie/view/ivrla:', $object_id)"/>
-                            </xsl:element>
-                        
-                            <!-- DOI ID -->
+                        <!-- DOI ID -->
+                        <xsl:if test="identifier[@type = 'doi']">
                             <xsl:element name="dc:identifier">
                                 <xsl:value-of select="identifier[@type = 'doi']"/>
                             </xsl:element>
+                        </xsl:if>
+                        
+                        <!-- OCLCNUM ID new JBH -->
+                        <xsl:if test="identifier[@type = 'oclcnum']">
+                            <xsl:element name="dc:identifier">
+                                <xsl:value-of select="identifier[@type = 'oclcnum']"/>
+                            </xsl:element>
+                        </xsl:if>
 
                         <!-- dc:language, id: 257 -->
-                        <xsl:for-each
-                            select="language/languageTerm[@type = 'code']/text() | language/scriptTerm[@type = 'code']">
+                        <!--
+                        <xsl:for-each select="language/languageTerm[@type = 'code']/text() | language/scriptTerm[@type = 'code']">
+                        -->
                             <!-- ISO LANG ALIGNEMENT  -->
                             <!--<xsl:variable name="idx_lang"
                                 select="index-of($map_lang/map, replace(., '^\s*(.+?)\s*$', '$1'))"/>-->
-                            <xsl:element name="dc:language">
+                            <!-- suppressed in favor of alternative below JBH -->
+                            <!--
+                            <xsl:element name="dc:language"> --><!-- </xsl:for-each> -->
                                 <!--<xsl:value-of select="$map_lang/map[$idx_lang]/@value"/>-->
+                        <!--
                                 <xsl:value-of select="."/>
                             </xsl:element>
+                        </xsl:for-each>
+                            -->
+                        
+                        <!-- dc:language, id: 257 -->
+                        
+                        <!-- the following alternative deals only with language codes - are the plain language names also useful? JBH -->
+                        <xsl:for-each select="language/scriptTerm[@type = 'code']">
+                            <xsl:variable name="lang_code">
+                                <xsl:call-template name="normaliseLanguageCodes">
+                                    <xsl:with-param name="code">
+                                        <xsl:value-of select="."/>
+                                    </xsl:with-param>
+                                </xsl:call-template>
+                            </xsl:variable>
+                            <xsl:if test="string-length($lang_code) &gt; 0">
+                                <xsl:element name="dc:language">
+                                    <xsl:value-of select="$lang_code"/>
+                                </xsl:element>
+                            </xsl:if>
                         </xsl:for-each>
 
                         <!-- dc:publisher, id: xxx -->
@@ -496,26 +540,70 @@
                         </xsl:element>
 
                         <!-- dc:subject, id: ??? -->
-                            <!-- skos:Concept -->
-                            <xsl:if test="subject/@valueURI">
-                                <xsl:for-each select="subject/@valueURI">
-                                    <xsl:element name="dc:subject">
-                                        <xsl:attribute name="rdf:resource">
-                                            <xsl:value-of select="."/>
-                                        </xsl:attribute>
-                                    </xsl:element>
-                                </xsl:for-each>
-                            </xsl:if>
-    
-                            <!-- Litterals -->
-                            <xsl:for-each select="subject">
+                        <!-- skos:Concept -->
+                        <xsl:if test="subject/@valueURI">
+                            <xsl:for-each select="subject/@valueURI">
+                                <xsl:element name="dc:subject">
+                                    <xsl:attribute name="rdf:resource">
+                                        <xsl:value-of select="."/>
+                                    </xsl:attribute>
+                                </xsl:element>
+                            </xsl:for-each>
+                        </xsl:if>
+
+                        <!-- Litterals new JBH -->
+                        <xsl:for-each select="subject">
+                            <xsl:if test="child::name/namePart">
                                 <xsl:element name="dc:subject">
                                     <xsl:attribute name="xml:lang">
                                         <xsl:value-of select="'en'"/>
                                     </xsl:attribute>
-                                    <xsl:value-of select="concat(topic, '--', geographic)"/>
+                                    <xsl:value-of select="child::name/namePart"/>
                                 </xsl:element>
-                            </xsl:for-each>
+                            </xsl:if>                            
+                        </xsl:for-each>
+                        <xsl:for-each select="subject/geographic">
+                            <xsl:if test="not(preceding-sibling::name) and not(preceding-sibling::topic)">
+                                <xsl:element name="dc:subject">
+                                    <xsl:attribute name="xml:lang">
+                                        <xsl:value-of select="'en'"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="."/>
+                                    <xsl:text>--geographic</xsl:text>
+                                </xsl:element>
+                            </xsl:if>                            
+                        </xsl:for-each>
+                        <xsl:for-each select="subject">
+                            <xsl:variable name="topics">
+                                <xsl:if test="child::topic">
+                                    <xsl:for-each select="child::node()">
+                                        <xsl:choose>
+                                            <xsl:when test="local-name()='topic' or local-name()='geographic'">
+                                                <xsl:value-of select="."/>
+                                            </xsl:when>
+                                        </xsl:choose>
+                                        <xsl:if test="not(position()=last())">
+                                            <xsl:if test="local-name()='topic' or local-name()='geographic'">
+                                                <xsl:text>--</xsl:text>
+                                            </xsl:if>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                </xsl:if>
+                            </xsl:variable>
+                            <xsl:if test="string-length($topics) &gt; 0">
+                                <xsl:element name="dc:subject">
+                                    <xsl:attribute name="xml:lang">
+                                        <xsl:value-of select="'en'"/>
+                                    </xsl:attribute>
+                                    <xsl:call-template name="normaliseTopics">
+                                        <xsl:with-param name="val">
+                                            <xsl:value-of select="$topics"/>
+                                        </xsl:with-param>
+                                    </xsl:call-template>
+                                </xsl:element>
+                            </xsl:if>
+                        </xsl:for-each>
+                        
 
                         <!-- dc:title, id: 274 -->
                         <xsl:element name="dc:title">
@@ -526,20 +614,20 @@
                         </xsl:element>
 
                         <!-- dc:type, id: 276 -->
-                            <!-- URIs -->
-                            <xsl:for-each select="genre/@valueURI">
-                                <xsl:element name="dc:type">
-                                    <xsl:attribute name="rdf:resource" select="."/>
-                                </xsl:element>
-                            </xsl:for-each>
-    
-                            <!-- Litterals -->
-                            <xsl:for-each select="genre | typeOfResource">
-                                <xsl:element name="dc:type">
-                                    <xsl:attribute name="xml:lang" select="'en'"/>
-                                    <xsl:value-of select="."/>
-                                </xsl:element>
-                            </xsl:for-each>
+                        <!-- URIs -->
+                        <xsl:for-each select="genre/@valueURI">
+                            <xsl:element name="dc:type">
+                                <xsl:attribute name="rdf:resource" select="."/>
+                            </xsl:element>
+                        </xsl:for-each>
+
+                        <!-- Litterals -->
+                        <xsl:for-each select="genre | typeOfResource">
+                            <xsl:element name="dc:type">
+                                <xsl:attribute name="xml:lang" select="'en'"/>
+                                <xsl:value-of select="."/>
+                            </xsl:element>
+                        </xsl:for-each>
 
 
                         <!-- HIERARCHIES -->
@@ -548,9 +636,7 @@
                         <xsl:if test="relatedItem[@type = 'host']">
                             <xsl:for-each select="relatedItem[@type = 'host']">
                                 <xsl:element name="dcterms:isPartOf">
-                                    <xsl:attribute name="rdf:resource"
-                                        select="substring-after(identifier[@type = 'uri'], 'fedora/')"
-                                    />
+                                    <xsl:attribute name="rdf:resource" select="substring-after(identifier[@type = 'uri'], 'fedora/')"/>
                                 </xsl:element>
                             </xsl:for-each>
                         </xsl:if>
@@ -629,10 +715,51 @@
 
                 </xsl:element>
             </xsl:if>
+            
 
         </xsl:element>
     </xsl:template>
     <!-- ./MAIN TEMPLATE -->
-
+    
+    <!-- TOPICS NORMALISE new JBH -->
+    <xsl:template name="normaliseTopics">
+        <xsl:param name="val"/>
+        <xsl:choose>
+            <xsl:when test="starts-with($val,'--') and ends-with($val,'--')">
+                <xsl:value-of select="substring(substring($val,1,string-length($val)-2),3)"/>
+            </xsl:when>
+            <xsl:when test="starts-with($val,'--')">
+                <xsl:value-of select="substring($val,1,3)"/>
+            </xsl:when>
+            <xsl:when test="ends-with($val,'--')">
+                <xsl:value-of select="substring($val,1,string-length($val)-2)"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$val"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <!-- ISO 639-3 to ISO 639-1 new JBH -->
+    <xsl:template name="normaliseLanguageCodes">
+        <xsl:param name="code"/>
+        <xsl:choose>
+            <xsl:when test="$code='ger'">de</xsl:when>
+            <xsl:when test="$code='eng'">en</xsl:when>
+            <xsl:when test="$code='spa'">es</xsl:when>
+            <xsl:when test="$code='fre'">fr</xsl:when>
+            <xsl:when test="$code='gle'">ga</xsl:when>
+            <xsl:when test="$code='sth'">ga</xsl:when>
+            <xsl:when test="$code='gla'">gd</xsl:when>
+            <xsl:when test="$code='lat'">la</xsl:when>
+            <xsl:when test="$code='Latn'">la</xsl:when>
+            <xsl:when test="$code='ita'">it</xsl:when>
+            <xsl:when test="$code='ell'">el</xsl:when><!-- greek -->
+            <xsl:when test="$code='gre'">el</xsl:when>
+            <xsl:when test="$code='dut'">nl</xsl:when>
+            <xsl:when test="$code='nld'">nl</xsl:when>
+            <xsl:when test="$code='por'">pt</xsl:when>
+        </xsl:choose>
+    </xsl:template>
 
 </xsl:stylesheet>
