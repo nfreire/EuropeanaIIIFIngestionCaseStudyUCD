@@ -111,6 +111,15 @@
     <xsl:variable name="provider">
         <xsl:text>University College Dublin</xsl:text>
     </xsl:variable>
+    
+    <xsl:variable name="provider_name">
+        <xsl:text>University College Dublin</xsl:text>
+    </xsl:variable>
+    
+    <xsl:variable name="provider_webview_endpoint">
+        <!-- added JBH -->
+        <xsl:text>https://digital.ucd.ie/view/</xsl:text>
+    </xsl:variable>
 
     <xsl:variable name="rights">
         <!-- QUESTION: is this licence a Europeana requirement? JBH -->
@@ -313,21 +322,39 @@
                         </xsl:attribute>
                     </xsl:element>
 
-                    <!--  edm:dataProvider  -->
-                    <xsl:element name="edm:dataProvider">
-                        <xsl:value-of select="originInfo/place/placeTerm"/>
-                    </xsl:element>
+                    <!--  edm:dataProvider - changes JBH -->
+                    <xsl:choose>
+                        <xsl:when test="location/physicalLocation[@type='institution']='University College Dublin'">
+                            <xsl:element name="edm:dataProvider">
+                                <xsl:value-of select="$provider_name"/>
+                            </xsl:element>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:element name="edm:dataProvider">
+                                <xsl:value-of select="location/physicalLocation[@type='institution']"/>
+                            </xsl:element>
+                            <xsl:element name="edm:dataProvider">
+                                <xsl:value-of select="$provider_name"/>
+                            </xsl:element>
+                        </xsl:otherwise>
+                    </xsl:choose>
 
                     <!-- edm:isShownAt, id: 217 -->
                     <!-- Check for mandatory elements on edm:isShownAt -->
                     <xsl:if test="$object_id">
-
                         <xsl:element name="edm:isShownAt">
                             <xsl:attribute name="rdf:resource">
-                                <xsl:value-of select="location/url"/>
+                                <xsl:choose>
+                                    <xsl:when test="location/url">
+                                        <xsl:value-of select="location/url"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="concat($provider_webview_endpoint,$object_id)"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </xsl:attribute>
                         </xsl:element>
-
+                        
                     </xsl:if>
 
                     <!-- Check for mandatory elements on edm:isShownBy -->
@@ -428,12 +455,15 @@
                                 <xsl:value-of select="extent"/>
                             </xsl:element>
 
-                            <xsl:element name="dc:format">
-                                <xsl:attribute name="xml:lang">
-                                    <xsl:value-of select="'en'"/>
-                                </xsl:attribute>
-                                <xsl:value-of select="form"/>
-                            </xsl:element>
+                            <!-- change JBH -->
+                            <xsl:if test="local-name()='form'">
+                                <xsl:element name="dc:format">
+                                    <xsl:attribute name="xml:lang">
+                                        <xsl:value-of select="'en'"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="form"/>
+                                </xsl:element>
+                            </xsl:if>
 
                             <!-- MANUALLY SELECTED FORMAT -->
                             <xsl:element name="dc:format">
@@ -445,10 +475,12 @@
                         </xsl:for-each>
 
                         <!-- dc:identifier, id: 255 -->
-                        <!-- Local ID -->
-                        <xsl:element name="dc:identifier">
-                            <xsl:value-of select="identifier[@type = 'local']"/>
-                        </xsl:element>
+                        <!-- Local ID - does not always occur JBH-->
+                        <xsl:if test="identifier[@type = 'local']">
+                            <xsl:element name="dc:identifier">
+                                <xsl:value-of select="identifier[@type = 'local']"/>
+                            </xsl:element>
+                        </xsl:if>
 
                         <!-- EAD ID -->
                         <xsl:if test="identifier[@type = 'EADseries']">
@@ -501,6 +533,24 @@
                         <!-- dc:language, id: 257 -->
                         
                         <!-- the following alternative deals only with language codes - are the plain language names also useful? JBH -->
+                        
+                        <xsl:for-each select="language/languageTerm[@type='code']">
+                            <xsl:variable name="lang_code">
+                                <xsl:call-template name="normaliseLanguageCodes">
+                                    <xsl:with-param name="code">
+                                        <xsl:value-of select="."/>
+                                    </xsl:with-param>
+                                </xsl:call-template>
+                            </xsl:variable>
+                            <xsl:if test="string-length($lang_code) &gt; 0">
+                                <xsl:element name="dc:language">
+                                    <xsl:value-of select="$lang_code"/>
+                                </xsl:element>
+                            </xsl:if>
+                        </xsl:for-each>
+                        
+                        <!-- scriptTerm is probably not what you want - it refers to the style of writing, not language -->
+                        <!--
                         <xsl:for-each select="language/scriptTerm[@type = 'code']">
                             <xsl:variable name="lang_code">
                                 <xsl:call-template name="normaliseLanguageCodes">
@@ -515,6 +565,7 @@
                                 </xsl:element>
                             </xsl:if>
                         </xsl:for-each>
+                        -->
 
                         <!-- dc:publisher, id: xxx -->
                         <xsl:element name="dc:publisher">
@@ -649,6 +700,78 @@
                                 <xsl:value-of select="."/>
                             </xsl:element>
                         </xsl:for-each>
+                        
+                        <!-- new JBH -->
+                        <xsl:for-each select="subject/geographic[@authority='geonames']">
+                            <xsl:element name="edm:Place">
+                                <xsl:attribute name="rdf:about">
+                                    <xsl:call-template name="normaliseGeonames">
+                                        <xsl:with-param name="val">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:with-param>
+                                    </xsl:call-template>
+                                </xsl:attribute>
+                                <xsl:element name="skos:prefLabel">
+                                    <xsl:attribute name="xml:lang">
+                                        <xsl:text>en</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="."/>
+                                </xsl:element>
+                            </xsl:element>
+                        </xsl:for-each>
+                        <xsl:for-each select="subject/geographic[@authority='naf' or @authority='lcsh' or @authority='viaf']">
+                            <xsl:element name="edm:Place">
+                                <xsl:attribute name="rdf:about">
+                                    <xsl:value-of select="@valueURI"/>
+                                </xsl:attribute>
+                                <xsl:element name="skos:prefLabel">
+                                    <xsl:attribute name="xml:lang">
+                                        <xsl:text>en</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="."/>
+                                </xsl:element>
+                            </xsl:element>
+                        </xsl:for-each>
+                        <xsl:for-each select="subject[@xlink:title='GeoNames' and not(@authority)]/geographic">
+                            <xsl:element name="edm:Place">
+                                <xsl:attribute name="rdf:about">
+                                    <xsl:variable name="xlink_href">
+                                        <xsl:value-of select="concat('http://www.geonames.org/',substring-before(substring-after(../@xlink:href,'http://www.geonames.org/'),'/'))"/>
+                                    </xsl:variable>
+                                    <xsl:call-template name="normaliseGeonames">
+                                        <xsl:with-param name="val">
+                                            <xsl:value-of select="$xlink_href"/>
+                                        </xsl:with-param>
+                                    </xsl:call-template>
+                                </xsl:attribute>
+                                <xsl:element name="skos:prefLabel">
+                                    <xsl:attribute name="xml:lang">
+                                        <xsl:text>en</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="."/>
+                                </xsl:element>
+                            </xsl:element>
+                        </xsl:for-each>
+                        
+                        <xsl:for-each select="subject/cartographics">
+                            <xsl:for-each select="coordinates">
+                                <xsl:if test="contains(.,',')">
+                                    <xsl:element name="edm:Place">
+                                        <xsl:element name="wgs84:lat">
+                                            <xsl:value-of select="substring-before(.,',')"/>
+                                        </xsl:element>
+                                        <xsl:element name="wgs84:long">
+                                            <xsl:value-of select="substring-after(.,',')"/>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:if>
+                                <xsl:if test="../name/namePart">
+                                    <xsl:element name="skos:prefLabel">
+                                        <xsl:value-of select="../name/namePart"/>
+                                    </xsl:element>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
 
                         <!-- edm:type, id: 377 -->
                         <xsl:element name="edm:type">
@@ -736,6 +859,19 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="$val"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <!-- NORMALISE SYNTAX OF GEONAMES REFS - JBH -->
+    <xsl:template name="normaliseGeonames">
+        <xsl:param name="val"/>
+        <xsl:choose>
+            <xsl:when test="substring($val,string-length($val)-1) = '/'">
+                <xsl:value-of select="$val"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="concat($val,'/')"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
