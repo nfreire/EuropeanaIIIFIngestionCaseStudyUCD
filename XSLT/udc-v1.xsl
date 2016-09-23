@@ -6,6 +6,7 @@
     xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:svcs="http://rdfs.org/sioc/services#" xmlns:wgs84="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:xalan="http://xml.apache.org/xalan" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:marcrel="http://id.loc.gov/vocabulary/relators/"
     xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:output encoding="UTF-8" indent="yes"/>
@@ -132,7 +133,7 @@
         and /mods/accessCondition/@xlink:href">
         <xsl:variable name="rights" select="/mods/accessCondition[@type='use and reproduction']/@xlink:href"/>
     </xsl:if>-->
-        <xsl:text>http://creativecommons.org/licenses/by-nc-sa/3.0/ie/</xsl:text>
+        <xsl:text>http://creativecommons.org/licenses/by-nc-sa/4.0/</xsl:text>
     </xsl:variable>
 
 
@@ -176,6 +177,8 @@
             <xsl:namespace name="doap">http://usefulinc.com/ns/doap#</xsl:namespace>
             <xsl:namespace name="edm">http://www.europeana.eu/schemas/edm/</xsl:namespace>
             <xsl:namespace name="foaf">http://xmlns.com/foaf/0.1/</xsl:namespace>
+            <!-- new JBH -->
+            <xsl:namespace name="marcrel">http://id.loc.gov/vocabulary/relators/</xsl:namespace>
             <xsl:namespace name="odrl">http://www.w3.org/ns/odrl/2/</xsl:namespace>
             <xsl:namespace name="ore">http://www.openarchives.org/ore/terms/</xsl:namespace>
             <xsl:namespace name="owl">http://www.w3.org/2002/07/owl#</xsl:namespace>
@@ -201,7 +204,360 @@
                 </xsl:element>
             </xsl:if>
             <!-- ./PROVIDED CHO -->
-
+            
+            
+            <!-- new JBH -->
+            
+            <xsl:for-each select="name[@authority and @valueURI]">
+                <xsl:if test="role/roleTerm[@type='code']='arc' or 
+                    role/roleTerm[@type='code']='aut' or 
+                    role/roleTerm[@type='code']='cmp' or 
+                    role/roleTerm[@type='code']='cre' or 
+                    role/roleTerm[@type='code']='ctb' or 
+                    role/roleTerm[@type='code']='dte' or 
+                    role/roleTerm[@type='code']='edt' or 
+                    role/roleTerm[@type='code']='fmo' or 
+                    role/roleTerm[@type='code']='fnd' or 
+                    role/roleTerm[@type='code']='lbt' or 
+                    role/roleTerm[@type='code']='pbl' or 
+                    role/roleTerm[@type='code']='pdr' or 
+                    role/roleTerm[@type='code']='pht' or 
+                    role/roleTerm[@type='code']='scl' or 
+                    role/roleTerm[@type='code']='spn' or 
+                    role/roleTerm[@type='code']='stl' or 
+                    role/roleTerm[@type='code']='rth'">
+                    <xsl:element name="edm:Agent">
+                        <xsl:attribute name="rdf:about">
+                            <xsl:value-of select="@valueURI"/>
+                        </xsl:attribute>
+                        <xsl:element name="skos:prefLabel">
+                            <xsl:value-of select="namePart"/>
+                        </xsl:element>
+                        <xsl:for-each select="role/roleTerm">
+                            <xsl:choose>
+                                <xsl:when test=".='arc'">
+                                    <xsl:element name="marcrel:arc">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Architect</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='aut'">
+                                    <xsl:element name="marcrel:aut">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Author</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='cmp'">
+                                    <xsl:element name="marcrel:cmp">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Compiler</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='cre'">
+                                    <xsl:element name="marcrel:cre">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Creator</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='ctb'">
+                                    <xsl:element name="marcrel:ctb">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Contributor</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='dte'">
+                                    <xsl:element name="marcrel:dte">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Dedicatee</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='edt'">
+                                    <xsl:element name="marcrel:edt">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Editor</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='fmo'">
+                                    <xsl:element name="marcrel:fmo">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Former owner</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='fnd'">
+                                    <xsl:element name="marcrel:fnd">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Funder</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='lbt'">
+                                    <xsl:element name="marcrel:lbt">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Librettist</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='pbl'">
+                                    <xsl:element name="marcrel:pbl">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Publisher</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='pdr'">
+                                    <xsl:element name="marcrel:pdr">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Project director</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='pht'">
+                                    <xsl:element name="marcrel:pht">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Photographer</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='rth'">
+                                    <xsl:element name="marcrel:rth">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Research team head</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='scl'">
+                                    <xsl:element name="marcrel:scl">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Sculptor</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='stl'">
+                                    <xsl:element name="marcrel:stl">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Storyteller</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test=".='spn'">
+                                    <xsl:element name="marcrel:spn">
+                                        <xsl:attribute name="rdf:resource" exclude-result-prefixes="#all">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:attribute>
+                                        <xsl:element name="skos:prefLabel">
+                                            <xsl:text>Sponsor</xsl:text>
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:when>
+                            </xsl:choose>
+                        </xsl:for-each>
+                        
+                    </xsl:element>
+                </xsl:if>
+            </xsl:for-each>
+            
+            <xsl:for-each select="subject/geographic[@authority='geonames']">
+                <xsl:element name="edm:Place">
+                    <xsl:attribute name="rdf:about">
+                        <xsl:call-template name="normaliseGeonames">
+                            <xsl:with-param name="val">
+                                <xsl:value-of select="@valueURI"/>
+                            </xsl:with-param>
+                        </xsl:call-template>
+                    </xsl:attribute>
+                    <xsl:element name="skos:prefLabel">
+                        <xsl:attribute name="xml:lang">
+                            <xsl:text>en</xsl:text>
+                        </xsl:attribute>
+                        <xsl:value-of select="."/>
+                    </xsl:element>
+                </xsl:element>
+            </xsl:for-each>
+            <xsl:for-each select="subject/geographic[@authority='naf' or @authority='lcsh' or @authority='viaf']">
+                <xsl:element name="edm:Place">
+                    <xsl:attribute name="rdf:about">
+                        <xsl:value-of select="@valueURI"/>
+                    </xsl:attribute>
+                    <xsl:element name="skos:prefLabel">
+                        <xsl:attribute name="xml:lang">
+                            <xsl:text>en</xsl:text>
+                        </xsl:attribute>
+                        <xsl:value-of select="."/>
+                    </xsl:element>
+                </xsl:element>
+            </xsl:for-each>
+            <xsl:for-each select="subject[@xlink:title='GeoNames' and not(@authority)]/geographic">
+                <xsl:element name="edm:Place">
+                    <xsl:attribute name="rdf:about">
+                        <xsl:variable name="xlink_href">
+                            <xsl:value-of select="concat('http://www.geonames.org/',substring-before(substring-after(../@xlink:href,'http://www.geonames.org/'),'/'))"/>
+                        </xsl:variable>
+                        <xsl:call-template name="normaliseGeonames">
+                            <xsl:with-param name="val">
+                                <xsl:value-of select="$xlink_href"/>
+                            </xsl:with-param>
+                        </xsl:call-template>
+                    </xsl:attribute>
+                    <xsl:element name="skos:prefLabel">
+                        <xsl:attribute name="xml:lang">
+                            <xsl:text>en</xsl:text>
+                        </xsl:attribute>
+                        <xsl:value-of select="."/>
+                    </xsl:element>
+                </xsl:element>
+            </xsl:for-each>
+            
+            <xsl:for-each select="subject/cartographics">
+                <!-- only process when there is a geonames reference associated with cartographics/@authority -->                
+                <xsl:for-each select="coordinates">
+                    <xsl:if test="@authority='geonames'">
+                        <xsl:if test="contains(.,',')">
+                            <xsl:element name="edm:Place">
+                                <xsl:attribute name="rdf:about">
+                                    <xsl:call-template name="normaliseGeonames">
+                                        <xsl:with-param name="val">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:with-param>
+                                    </xsl:call-template>
+                                </xsl:attribute>
+                                <xsl:element name="wgs84:lat">
+                                    <xsl:value-of select="substring-before(.,',')"/>
+                                </xsl:element>
+                                <xsl:element name="wgs84:long">
+                                    <xsl:value-of select="substring-after(.,',')"/>
+                                </xsl:element>
+                                <xsl:choose>
+                                    <xsl:when test="../../geographic" exclude-result-prefixes="mods mets">
+                                        <xsl:variable name="prefLabel">
+                                            <xsl:value-of select="../../geographic[1]"/>
+                                        </xsl:variable>
+                                        <xsl:if test="string-length($prefLabel) &gt; 0">
+                                            <skos:prefLabel>
+                                                <xsl:attribute name="xml:lang">
+                                                    <xsl:text>en</xsl:text>
+                                                </xsl:attribute>
+                                                <xsl:value-of select="normalize-space($prefLabel)"/>
+                                            </skos:prefLabel>
+                                        </xsl:if>
+                                    </xsl:when>
+                                    <xsl:when test="preceding::subject/geographic" exclude-result-prefixes="mods mets">
+                                        <xsl:variable name="prefLabel">
+                                            <xsl:for-each select="preceding::subject/geographic">
+                                                <xsl:value-of select="."/>
+                                                <xsl:text> -- </xsl:text>
+                                            </xsl:for-each>
+                                        </xsl:variable>
+                                        <xsl:if test="string-length($prefLabel) &gt; 0">
+                                            <skos:prefLabel>
+                                                <xsl:attribute name="xml:lang">
+                                                    <xsl:text>en</xsl:text>
+                                                </xsl:attribute>
+                                                <xsl:value-of select="normalize-space(substring($prefLabel,1,string-length($prefLabel)-3))"/>
+                                            </skos:prefLabel>
+                                        </xsl:if>
+                                    </xsl:when>
+                                </xsl:choose>
+                            </xsl:element>
+                        </xsl:if>
+                        <xsl:if test="contains(.,'eastlimit')">
+                            <xsl:element name="edm:Place">
+                                <xsl:attribute name="rdf:about">
+                                    <xsl:call-template name="normaliseGeonames">
+                                        <xsl:with-param name="val">
+                                            <xsl:value-of select="@valueURI"/>
+                                        </xsl:with-param>
+                                    </xsl:call-template>
+                                </xsl:attribute>
+                                <xsl:element name="dcterms:spatial">
+                                    <xsl:attribute name="xsi:type">
+                                        <xsl:text>dcterms:Box</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:if test="../name/namePart">
+                                        <xsl:value-of select="concat('name=',../name/namePart,'; ')"/>
+                                    </xsl:if>
+                                    <xsl:value-of select="."/>
+                                    <xsl:text>; projection=EPSG:4326</xsl:text>
+                                </xsl:element>
+                                <xsl:if test="preceding::subject/geographic" exclude-result-prefixes="mods mets">
+                                    <xsl:variable name="prefLabel">
+                                        <xsl:for-each select="preceding::subject/geographic">
+                                            <xsl:if test="position() &gt;1 and not(position() = last())">
+                                                <xsl:text>, </xsl:text>
+                                            </xsl:if>
+                                            <xsl:value-of select="."/>
+                                        </xsl:for-each>
+                                    </xsl:variable>
+                                    <xsl:if test="string-length($prefLabel) &gt; 0">
+                                        <skos:prefLabel>
+                                            <xsl:attribute name="xml:lang">
+                                                <xsl:text>en</xsl:text>
+                                            </xsl:attribute>
+                                            <xsl:value-of select="$prefLabel"/>
+                                        </skos:prefLabel>
+                                    </xsl:if>
+                                </xsl:if>
+                            </xsl:element>
+                        </xsl:if>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+            
             <!-- WEB RESOURCE -->
             <xsl:if test="$resource_id">
 
@@ -289,7 +645,7 @@
                         <xsl:attribute name="rdf:about">
                             <xsl:value-of select="."/>
                         </xsl:attribute>
-
+                        
                         <!--  skos:prefLabel, id: 182  -->
                         <xsl:element name="skos:prefLabel">
                             <xsl:attribute name="xml:lang">
@@ -297,7 +653,25 @@
                             </xsl:attribute>
                             <xsl:value-of select="../topic"/>
                         </xsl:element>
-
+                        
+                    </xsl:element>
+                </xsl:for-each>
+            </xsl:if>
+            <xsl:if test="genre[@valueURI]">
+                <xsl:for-each select="genre[@valueURI]">
+                    <xsl:element name="skos:Concept">
+                        <xsl:attribute name="rdf:about">
+                            <xsl:value-of select="@valueURI"/>
+                        </xsl:attribute>
+                        
+                        <!--  skos:prefLabel, id: 182  -->
+                        <xsl:element name="skos:prefLabel">
+                            <xsl:attribute name="xml:lang">
+                                <xsl:value-of select="'en'"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="."/>
+                        </xsl:element>
+                        
                     </xsl:element>
                 </xsl:for-each>
             </xsl:if>
@@ -329,10 +703,23 @@
                                 <xsl:value-of select="$provider_name"/>
                             </xsl:element>
                         </xsl:when>
-                        <xsl:otherwise>
+                        <xsl:when test="location/physicalLocation[@type='institution']">
                             <xsl:element name="edm:dataProvider">
                                 <xsl:value-of select="location/physicalLocation[@type='institution']"/>
                             </xsl:element>
+                            <xsl:element name="edm:dataProvider">
+                                <xsl:value-of select="$provider_name"/>
+                            </xsl:element>
+                        </xsl:when>
+                        <xsl:when test="location/physicalLocation[@type='repository']">
+                            <xsl:element name="edm:dataProvider">
+                                <xsl:value-of select="location/physicalLocation[@type='repository']"/>
+                            </xsl:element>
+                            <xsl:element name="edm:dataProvider">
+                                <xsl:value-of select="$provider_name"/>
+                            </xsl:element>
+                        </xsl:when>
+                        <xsl:otherwise>
                             <xsl:element name="edm:dataProvider">
                                 <xsl:value-of select="$provider_name"/>
                             </xsl:element>
@@ -399,11 +786,14 @@
 
                         <!-- dc:contributor, id: xxx -->
                         <!-- CONSISTENCY ??? -->
+                        <!-- this replaced with aprallelism to edm:Agent, below - JBH -->
+                        <!--
                         <xsl:for-each select="name[type = 'personal']/namePart">
                             <xsl:element name="dc:contributor">
                                 <xsl:value-of select="."/>
                             </xsl:element>
                         </xsl:for-each>
+                        -->
 
                         <!-- dc:date -->
                         <xsl:for-each select="originInfo/dateCreated[keyDate = 'yes']">
@@ -420,27 +810,54 @@
                             </xsl:attribute>
 
                             <xsl:text>Physical location: </xsl:text>
-                            <xsl:value-of
-                                select="
-                                    concat(
-                                    location/physicalLocation[@type = 'institution'],
-                                    ', ',
-                                    location/physicalLocation[@type = 'repository'],
-                                    ', ',
-                                    location/physicalLocation[@type = 'collection'],
-                                    ', Ref. ',
-                                    location/physicalLocation[@type = 'originalRef'])"
-                            />
+                            <xsl:for-each select="location/physicalLocation[@type = 'institution' or @type = 'repository' or @type = 'collection' or @type = 'originalRef']">
+                                <xsl:value-of select="."/>
+                                <xsl:if test="position() &lt; last()">
+                                    <xsl:text>, </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
                         </xsl:element>
 
-                        <!-- Main Description -->
+                        <!-- Main Description - new JBH added abstract -->
+                        <xsl:for-each select="abstract">
+                            <xsl:element name="dc:description">
+                                <xsl:attribute name="xml:lang">
+                                    <xsl:value-of select="'en'"/>
+                                </xsl:attribute>
+                                <xsl:value-of select="normalize-space(.)"/>
+                            </xsl:element>
+                        </xsl:for-each>
                         <xsl:for-each select="note">
                             <xsl:element name="dc:description">
                                 <xsl:attribute name="xml:lang">
                                     <xsl:value-of select="'en'"/>
                                 </xsl:attribute>
-
-                                <xsl:value-of select="."/>
+                                <!-- the following constants carry over from EAD finding aid element labels - JBH -->
+                                <xsl:choose>
+                                    <xsl:when test="@displayLabel='Acquisition details' and not(preceding::note/@displayLabel='Acquisition details')">
+                                        <xsl:text>Acquisition details: </xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="@displayLabel='Biographical/historical information' and not(preceding::note/@displayLabel='Biographical/historical information')">
+                                        <xsl:text>Biographical/historical information: </xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="@displayLabel='Location of original' and not(preceding::note/@displayLabel='Location of original')">
+                                        <xsl:text>Location of original: </xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="@displayLabel='Ownership/custodial history' and not(preceding::note/@displayLabel='Ownership/custodial history')">
+                                        <xsl:text>Ownership/custodial history: </xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="@displayLabel='Scope and content' and not(preceding::note/@displayLabel='Scope and content')">
+                                        <xsl:text>Scope and content: </xsl:text>
+                                    </xsl:when>
+                                </xsl:choose>
+                                <xsl:value-of select="normalize-space(.)"/>
+                            </xsl:element>
+                        </xsl:for-each>
+                        
+                        <!-- dcterms:tableOfContents - new JBH -->
+                        <xsl:for-each select="tableOfContents">
+                            <xsl:element name="dcterms:tableOfContents">
+                                <xsl:value-of select="normalize-space(.)"/>
                             </xsl:element>
                         </xsl:for-each>
 
@@ -483,6 +900,7 @@
                         </xsl:if>
 
                         <!-- EAD ID -->
+                        <!-- EAD ID - does not always occur, confined to objects with associated EAD finding aids JBH-->
                         <xsl:if test="identifier[@type = 'EADseries']">
                             <xsl:element name="dc:identifier">
                                 <xsl:value-of select="concat('EADseries:', identifier[@type = 'EADseries'])"/>
@@ -500,6 +918,7 @@
                         </xsl:element>
                         
                         <!-- DOI ID -->
+                        <!-- if assigned - JBH -->
                         <xsl:if test="identifier[@type = 'doi']">
                             <xsl:element name="dc:identifier">
                                 <xsl:value-of select="identifier[@type = 'doi']"/>
@@ -568,32 +987,50 @@
                         -->
 
                         <!-- dc:publisher, id: xxx -->
-                        <xsl:element name="dc:publisher">
-                            <xsl:value-of select="originInfo/publisher"/>
-                        </xsl:element>
+                        <xsl:if test="originInfo/publisher">
+                            <!-- changed to for-each JBH -->
+                            <xsl:for-each select="originInfo/publisher">
+                                <xsl:element name="dc:publisher">
+                                    <xsl:value-of select="normalize-space(.)"/>
+                                </xsl:element>
+                            </xsl:for-each>
+                        </xsl:if>
 
                         <!-- dc:rights, id: 265 -->
-                        <xsl:for-each select="accessCondition">
+                        <xsl:for-each select="accessCondition[not(contains(@xlink:href,'creativecommons'))]">
                             <xsl:element name="dc:rights">
                                 <xsl:attribute name="xml:lang">
                                     <xsl:value-of select="'en'"/>
                                 </xsl:attribute>
-                                <xsl:value-of select="."/>
+                                <xsl:choose>
+                                    <xsl:when test="@displayLabel='Suggested credit'">
+                                        <xsl:text>Suggested credit: </xsl:text>
+                                    </xsl:when>
+                                </xsl:choose>
+                                <xsl:value-of select="normalize-space(.)"/>
                             </xsl:element>
                         </xsl:for-each>
-
-                        <!-- dc:source, id: 268 -->
-                        <xsl:element name="dc:source">
-                            <xsl:attribute name="xml:lang">
-                                <xsl:value-of select="'en'"/>
+                        <xsl:element name="dc:rights">
+                            <xsl:attribute name="rdf:resource">
+                                <xsl:text>http://creativecommons.org/licenses/by-nc-sa/4.0/</xsl:text>
                             </xsl:attribute>
-                            <xsl:value-of select="recordInfo/recordContentSource"/>
+                            <xsl:text>Use of this resource is governed by the Creative Commons - Attribution, Non-Commercial, ShareAlike (BY-NC-SA) license.</xsl:text>
                         </xsl:element>
+
+                        <!-- dc:source, id: 268 - changed JBH, does not always occur -->
+                        <xsl:if test="recordInfo/recordContentSource">
+                            <xsl:element name="dc:source">
+                                <xsl:attribute name="xml:lang">
+                                    <xsl:value-of select="'en'"/>
+                                </xsl:attribute>
+                                <xsl:value-of select="recordInfo/recordContentSource"/>
+                            </xsl:element>
+                        </xsl:if>
 
                         <!-- dc:subject, id: ??? -->
                         <!-- skos:Concept -->
                         <xsl:if test="subject/@valueURI">
-                            <xsl:for-each select="subject/@valueURI">
+                            <xsl:for-each select="distinct-values(subject/@valueURI)">
                                 <xsl:element name="dc:subject">
                                     <xsl:attribute name="rdf:resource">
                                         <xsl:value-of select="."/>
@@ -610,6 +1047,9 @@
                                         <xsl:value-of select="'en'"/>
                                     </xsl:attribute>
                                     <xsl:value-of select="child::name/namePart"/>
+                                    <xsl:for-each select="topic">
+                                        <xsl:value-of select="concat('--',.)"/>
+                                    </xsl:for-each>
                                 </xsl:element>
                             </xsl:if>                            
                         </xsl:for-each>
@@ -624,13 +1064,14 @@
                                 </xsl:element>
                             </xsl:if>                            
                         </xsl:for-each>
+                        
                         <xsl:for-each select="subject">
                             <xsl:variable name="topics">
                                 <xsl:if test="child::topic">
                                     <xsl:for-each select="child::node()">
                                         <xsl:choose>
                                             <xsl:when test="local-name()='topic' or local-name()='geographic'">
-                                                <xsl:value-of select="."/>
+                                                <xsl:value-of select="normalize-space(.)"/>
                                             </xsl:when>
                                         </xsl:choose>
                                         <xsl:if test="not(position()=last())">
@@ -641,7 +1082,7 @@
                                     </xsl:for-each>
                                 </xsl:if>
                             </xsl:variable>
-                            <xsl:if test="string-length($topics) &gt; 0">
+                            <xsl:if test="string-length($topics) &gt; 0 and not(topic = preceding::topic[1])">
                                 <xsl:element name="dc:subject">
                                     <xsl:attribute name="xml:lang">
                                         <xsl:value-of select="'en'"/>
@@ -661,19 +1102,20 @@
                             <xsl:attribute name="xml:lang">
                                 <xsl:value-of select="'en'"/>
                             </xsl:attribute>
-                            <xsl:value-of select="titleInfo/title"/>
+                            <xsl:value-of select="normalize-space(titleInfo/title)"/>
                         </xsl:element>
-
+                        
                         <!-- dc:type, id: 276 -->
                         <!-- URIs -->
-                        <xsl:for-each select="genre/@valueURI">
+                        <xsl:for-each select="genre[@valueURI]">
                             <xsl:element name="dc:type">
-                                <xsl:attribute name="rdf:resource" select="."/>
+                                <xsl:attribute name="rdf:resource" select="@valueURI"/>
                             </xsl:element>
+                            <xsl:value-of select="."/>
                         </xsl:for-each>
 
                         <!-- Litterals -->
-                        <xsl:for-each select="genre | typeOfResource">
+                        <xsl:for-each select="genre[not(@valueURI)] | typeOfResource">
                             <xsl:element name="dc:type">
                                 <xsl:attribute name="xml:lang" select="'en'"/>
                                 <xsl:value-of select="."/>
@@ -695,46 +1137,166 @@
 
                         <!-- dcterms:spatial, id: 335 -->
                         <!-- REMOVING THE DUPLICATES -->
+                        <!-- commented JBH
                         <xsl:for-each select="distinct-values(subject/geographic)">
                             <xsl:element name="dcterms:spatial">
                                 <xsl:value-of select="."/>
                             </xsl:element>
                         </xsl:for-each>
+                        -->
+                        
+                        <!-- new JBH -->
+                        <!-- names, parallel top-level statements in edm:Agent -->
+                        <xsl:for-each select="name[@authority and @valueURI]">
+                            <xsl:if test="role/roleTerm[@type='code']='arc' or 
+                                role/roleTerm[@type='code']='aut' or 
+                                role/roleTerm[@type='code']='cmp' or 
+                                role/roleTerm[@type='code']='cre' or 
+                                role/roleTerm[@type='code']='ctb' or 
+                                role/roleTerm[@type='code']='dte' or 
+                                role/roleTerm[@type='code']='edt' or 
+                                role/roleTerm[@type='code']='fmo' or 
+                                role/roleTerm[@type='code']='fnd' or 
+                                role/roleTerm[@type='code']='lbt' or 
+                                role/roleTerm[@type='code']='pbl' or 
+                                role/roleTerm[@type='code']='pdr' or 
+                                role/roleTerm[@type='code']='pht' or 
+                                role/roleTerm[@type='code']='scl' or 
+                                role/roleTerm[@type='code']='spn' or 
+                                role/roleTerm[@type='code']='stl' or 
+                                role/roleTerm[@type='code']='rth'">
+                                <xsl:element name="dc:contributor">
+                                    <xsl:attribute name="rdf:resource">
+                                        <xsl:value-of select="@valueURI"/>
+                                    </xsl:attribute>
+                                    <xsl:for-each select="role/roleTerm">
+                                        <xsl:choose>
+                                            <xsl:when test=".='arc'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Architect</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='aut'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Author</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='cmp'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Compiler</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='cre'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Creator</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='ctb'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Contributor</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='dte'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Dedicatee</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='edt'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Editor</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='fmo'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Former owner</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='fnd'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Funder</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='lbt'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Librettist</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='pbl'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Publisher</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='pdr'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Project director</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='pht'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Photographer</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='rth'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Research team head</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='scl'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Sculptor</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='stl'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Storyteller</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                            <xsl:when test=".='spn'">
+                                                <xsl:attribute name="rdfs:label">
+                                                    <xsl:text>Sponsor</xsl:text>
+                                                </xsl:attribute>
+                                            </xsl:when>
+                                        </xsl:choose>
+                                    </xsl:for-each>
+                                    <!--
+                                    <xsl:value-of select="namePart"/>
+                                    -->
+                                </xsl:element>
+                            </xsl:if>
+                        </xsl:for-each>
                         
                         <!-- new JBH -->
                         <xsl:for-each select="subject/geographic[@authority='geonames']">
-                            <xsl:element name="edm:Place">
-                                <xsl:attribute name="rdf:about">
+                            <xsl:element name="dcterms:spatial">
+                                <xsl:attribute name="rdf:resource">
                                     <xsl:call-template name="normaliseGeonames">
                                         <xsl:with-param name="val">
                                             <xsl:value-of select="@valueURI"/>
                                         </xsl:with-param>
                                     </xsl:call-template>
                                 </xsl:attribute>
+                                <!--
                                 <xsl:element name="skos:prefLabel">
                                     <xsl:attribute name="xml:lang">
                                         <xsl:text>en</xsl:text>
                                     </xsl:attribute>
                                     <xsl:value-of select="."/>
                                 </xsl:element>
+                                -->
                             </xsl:element>
                         </xsl:for-each>
                         <xsl:for-each select="subject/geographic[@authority='naf' or @authority='lcsh' or @authority='viaf']">
-                            <xsl:element name="edm:Place">
-                                <xsl:attribute name="rdf:about">
-                                    <xsl:value-of select="@valueURI"/>
-                                </xsl:attribute>
-                                <xsl:element name="skos:prefLabel">
-                                    <xsl:attribute name="xml:lang">
-                                        <xsl:text>en</xsl:text>
+                            <xsl:if test="not(preceding::subject/geographic/@valueURI = @valueURI)">
+                                <xsl:element name="dcterms:spatial">
+                                    <xsl:attribute name="rdf:resource">
+                                        <xsl:value-of select="@valueURI"/>
                                     </xsl:attribute>
-                                    <xsl:value-of select="."/>
                                 </xsl:element>
-                            </xsl:element>
+                            </xsl:if>
                         </xsl:for-each>
                         <xsl:for-each select="subject[@xlink:title='GeoNames' and not(@authority)]/geographic">
-                            <xsl:element name="edm:Place">
-                                <xsl:attribute name="rdf:about">
+                            <xsl:element name="dcterms:spatial">
+                                <xsl:attribute name="rdf:resource">
                                     <xsl:variable name="xlink_href">
                                         <xsl:value-of select="concat('http://www.geonames.org/',substring-before(substring-after(../@xlink:href,'http://www.geonames.org/'),'/'))"/>
                                     </xsl:variable>
@@ -744,35 +1306,79 @@
                                         </xsl:with-param>
                                     </xsl:call-template>
                                 </xsl:attribute>
+                                <!--
                                 <xsl:element name="skos:prefLabel">
                                     <xsl:attribute name="xml:lang">
                                         <xsl:text>en</xsl:text>
                                     </xsl:attribute>
                                     <xsl:value-of select="."/>
                                 </xsl:element>
+                                -->
                             </xsl:element>
                         </xsl:for-each>
                         
                         <xsl:for-each select="subject/cartographics">
                             <xsl:for-each select="coordinates">
                                 <xsl:if test="contains(.,',')">
-                                    <xsl:element name="edm:Place">
+                                    <xsl:element name="dcterms:spatial">
                                         <xsl:element name="wgs84:lat">
                                             <xsl:value-of select="substring-before(.,',')"/>
                                         </xsl:element>
                                         <xsl:element name="wgs84:long">
                                             <xsl:value-of select="substring-after(.,',')"/>
                                         </xsl:element>
+                                        <xsl:choose>
+                                            <xsl:when test="../../geographic" exclude-result-prefixes="mods mets">
+                                                <xsl:variable name="prefLabel">
+                                                        <xsl:value-of select="../../geographic[1]"/>
+                                                </xsl:variable>
+                                                <!--
+                                                <xsl:if test="string-length($prefLabel) &gt; 0">
+                                                    <skos:prefLabel>
+                                                        <xsl:attribute name="xml:lang">
+                                                            <xsl:text>en</xsl:text>
+                                                        </xsl:attribute>
+                                                        <xsl:value-of select="normalize-space($prefLabel)"/>
+                                                    </skos:prefLabel>
+                                                </xsl:if>
+                                                -->
+                                            </xsl:when>
+                                            <xsl:when test="preceding::subject/geographic" exclude-result-prefixes="mods mets">
+                                                <xsl:variable name="prefLabel">
+                                                    <xsl:for-each select="preceding::subject/geographic">
+                                                        <xsl:value-of select="."/>
+                                                        <xsl:text> -- </xsl:text>
+                                                    </xsl:for-each>
+                                                </xsl:variable>
+                                                <!--
+                                                <xsl:if test="string-length($prefLabel) &gt; 0">
+                                                    <skos:prefLabel>
+                                                        <xsl:attribute name="xml:lang">
+                                                            <xsl:text>en</xsl:text>
+                                                        </xsl:attribute>
+                                                        <xsl:value-of select="normalize-space(substring($prefLabel,1,string-length($prefLabel)-3))"/>
+                                                    </skos:prefLabel>
+                                                </xsl:if>
+                                                -->
+                                            </xsl:when>
+                                        </xsl:choose>
                                     </xsl:element>
                                 </xsl:if>
-                                <xsl:if test="../name/namePart">
-                                    <xsl:element name="skos:prefLabel">
-                                        <xsl:value-of select="../name/namePart"/>
+                                <xsl:if test="contains(.,'eastlimit')">
+                                    <xsl:element name="dcterms:spatial">
+                                        <xsl:attribute name="xsi:type">
+                                            <xsl:text>dcterms:Box</xsl:text>
+                                        </xsl:attribute>
+                                        <xsl:if test="../name/namePart">
+                                            <xsl:value-of select="concat('name=',../name/namePart,'; ')"/>
+                                        </xsl:if>
+                                        <xsl:value-of select="."/>
+                                        <xsl:text>; projection=EPSG:4326</xsl:text>
                                     </xsl:element>
                                 </xsl:if>
                             </xsl:for-each>
                         </xsl:for-each>
-
+                        
                         <!-- edm:type, id: 377 -->
                         <xsl:element name="edm:type">
                             <xsl:value-of select="'IMAGE'"/>
@@ -781,7 +1387,6 @@
                     </xsl:element>
 
                 </xsl:if>
-
 
                 <!-- EUROPEANA AGGREGATION -->
                 <xsl:element name="edm:EuropeanaAggregation">
@@ -826,6 +1431,14 @@
                     <xsl:element name="dcterms:conformsTo">
                         <xsl:attribute name="rdf:resource">
                             <xsl:text>http://iiif.io/api/image</xsl:text>
+                        </xsl:attribute>
+                    </xsl:element>
+                    
+                    <!-- dcterms:isReferencedBy JBH -->
+                    
+                    <xsl:element name="dcterms:isReferencedBy">
+                        <xsl:attribute name="rdf:resource">
+                            <xsl:value-of select="concat($baseUrl_manifest,$object_id)"/>
                         </xsl:attribute>
                     </xsl:element>
 
