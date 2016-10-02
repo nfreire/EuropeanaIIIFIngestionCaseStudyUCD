@@ -6,15 +6,92 @@
     xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:svcs="http://rdfs.org/sioc/services#" xmlns:wgs84="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:xalan="http://xml.apache.org/xalan" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:marcrel="http://id.loc.gov/vocabulary/relators/"
     xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    
+    <!-- 
+    
+    Outstanding questions or issues, and comments (JBH)
+    
+    - references to related entities (mods:relatedItem[@type='otherVersion' or @type='original' or @type='otherFormat' or @type='references' or @type='references'] (other types may also occur)
+    o at UCD otherVersion can refer to data visualisations referenced by a URI
+    o at UCD references or references refer to significant secondary sources
+    
+    - date: the original stylesheet only selects dates with the keyDate attribute ; what about date ranges, etc.?
+    
+    - MODS classification element is not referenced
+    
+    - MODS part element is not referenced ; occurs commonly with regard to digitised journals and references to secondary sources
+    
+    - MODS targetAudience is not referenced ; can be used to identify juvenile material, or material not appropriate for children (e.g., graphic depictions of violence)
+    
+    - MODS role element values only quoted in rdf:label value of dc:contributor element
+    
+    - comments and changes made by JBH are annotated with initials 'JBH'
+    
+    -->
 
     <xsl:output encoding="UTF-8" indent="yes"/>
-
+    
+    <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+    <!-- PARAMETERS added JBH -->
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+    
+    <!-- assume potential for other orgs using the XSLT, so treat as configuration parameters -->
+    
+    <!-- Strings changed JBH -->
+    <xsl:param name="baseUrl_manifest">
+        <xsl:text>https://data.ucd.ie/api/img/manifests/</xsl:text>
+    </xsl:param>
+    
+    <xsl:param name="baseUrl_service">
+        <xsl:text>https://iiif.ucd.ie/loris/</xsl:text>
+    </xsl:param>
+    
+    <xsl:param name="hqPicture">
+        <!--<xsl:text>/full/full/0/default.png</xsl:text>-->
+        <xsl:text>/full/full/0/default.jpg</xsl:text>
+    </xsl:param>
+    
+    <xsl:param name="thumb">
+        <xsl:text>/full/600,/0/default.jpg</xsl:text>
+    </xsl:param>
+    
+    <xsl:param name="format">
+        <!--<xsl:text>image/png</xsl:text>-->
+        <xsl:text>image/jpeg</xsl:text>
+    </xsl:param>
+    
+    <xsl:param name="provider">
+        <xsl:text>University College Dublin</xsl:text>
+    </xsl:param>
+    
+    <xsl:param name="provider_name">
+        <xsl:text>University College Dublin</xsl:text>
+    </xsl:param>
+    
+    <xsl:param name="provider_webview_endpoint">
+        <!-- added JBH -->
+        <xsl:text>https://digital.ucd.ie/view/</xsl:text>
+    </xsl:param>
+    
+    <xsl:param name="rights">
+        <!-- Nota bene: rights element treated as a default for the site - JBH -->
+        <!--<xsl:if test="not(accessCondition/@displayLabel = 'Additional Information'])
+            ">
+            <xsl:value-of select="accessCondition/@xlink:href"/>
+            
+            </xsl:if>-->
+        <!--    <xsl:if test="not(/mods/accessCondition/@displayLabel)
+            and /mods/accessCondition/@xlink:href">
+            <xsl:variable name="rights" select="/mods/accessCondition[@type='use and reproduction']/@xlink:href"/>
+            </xsl:if>-->
+        <xsl:text>http://creativecommons.org/licenses/by-nc-sa/4.0/</xsl:text>
+    </xsl:param>
+    
     <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
     <!-- VARIABLES -->
     <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
-
+    
     <!-- FIXED VARIABLES -->
 
     <!-- Languages mapping ISO_639-2b to ISO_639-1 (when possible) -->
@@ -86,70 +163,39 @@
         <map value="gr">gr</map>
     </xsl:variable>
 
-    <!-- Strings changed JBH -->
-    <xsl:variable name="baseUrl_manifest">
-        <xsl:text>https://data.ucd.ie/api/img/manifests/</xsl:text>
-    </xsl:variable>
-
-    <xsl:variable name="baseUrl_service">
-        <xsl:text>https://iiif.ucd.ie/loris/</xsl:text>
-    </xsl:variable>
-
-    <xsl:variable name="hqPicture">
-        <!--<xsl:text>/full/full/0/default.png</xsl:text>-->
-        <xsl:text>/full/full/0/default.jpg</xsl:text>
-    </xsl:variable>
-
-    <xsl:variable name="thumb">
-        <xsl:text>/full/600,/0/default.jpg</xsl:text>
-    </xsl:variable>
-
-    <xsl:variable name="format">
-        <!--<xsl:text>image/png</xsl:text>-->
-        <xsl:text>image/jpeg</xsl:text>
-    </xsl:variable>
-
-    <xsl:variable name="provider">
-        <xsl:text>University College Dublin</xsl:text>
-    </xsl:variable>
-    
-    <xsl:variable name="provider_name">
-        <xsl:text>University College Dublin</xsl:text>
-    </xsl:variable>
-    
-    <xsl:variable name="provider_webview_endpoint">
-        <!-- added JBH -->
-        <xsl:text>https://digital.ucd.ie/view/</xsl:text>
-    </xsl:variable>
-
-    <xsl:variable name="rights">
-        <!-- QUESTION: is this licence a Europeana requirement? JBH -->
-        <!--<xsl:if test="not(accessCondition/@displayLabel = 'Additional Information'])
-            ">
-            <xsl:value-of select="accessCondition/@xlink:href"/>
-            
-        </xsl:if>-->
-        <!--    <xsl:if test="not(/mods/accessCondition/@displayLabel)
-        and /mods/accessCondition/@xlink:href">
-        <xsl:variable name="rights" select="/mods/accessCondition[@type='use and reproduction']/@xlink:href"/>
-    </xsl:if>-->
-        <xsl:text>http://creativecommons.org/licenses/by-nc-sa/4.0/</xsl:text>
-    </xsl:variable>
-
-
     <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
     <!-- DYNAMIC VARIABLES -->
     <!-- IDs -->
     <!--<xsl:variable name="object_id"
-        select="substring-after(/mods/location/url[@usage = 'primary'], 'ivrla_')"/>-->
-    <xsl:variable name="object_id" select="substring-after(/mods/identifier[@type = 'uri'], 'fedora/')"/>
+    select="substring-after(/mods/location/url[@usage = 'primary'], 'ivrla_')"/>-->
+    
+    <xsl:variable name="object_id">
+        <!-- assume potential for use by other providers - JBH -->
+        <xsl:choose>
+            <xsl:when test="$provider_name='University College Dublin'">
+                <xsl:value-of select="substring-after(/mods/identifier[@type = 'uri'], 'fedora/')"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:variable>
 
     <!--<xsl:variable name="europeana_id" select="concat('ivrla_', $object_id)"/>-->
-    <xsl:variable name="europeana_id" select="substring-after(/mods/identifier[@type = 'uri'], 'fedora/')"/>
+    <xsl:variable name="europeana_id">
+        <!-- assume potential for use by other providers - JBH -->
+        <xsl:choose>
+            <xsl:when test="$provider_name='University College Dublin'">
+                <xsl:value-of select="substring-after(/mods/identifier[@type = 'uri'], 'fedora/')"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:variable>
 
-    <xsl:variable name="resource_id" select="substring-after(/mods/relatedItem[@type = 'constituent'][1]/identifier[@type = 'uri'], 'info:fedora/')"/>
-
-
+    <xsl:variable name="resource_id">
+        <!-- assume potential for use by other providers - JBH -->
+        <xsl:choose>
+            <xsl:when test="$provider_name='University College Dublin'">
+                <xsl:value-of  select="substring-after(/mods/relatedItem[@type = 'constituent'][1]/identifier[@type = 'uri'], 'info:fedora/')"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:variable>
 
 
     <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
@@ -177,8 +223,6 @@
             <xsl:namespace name="doap">http://usefulinc.com/ns/doap#</xsl:namespace>
             <xsl:namespace name="edm">http://www.europeana.eu/schemas/edm/</xsl:namespace>
             <xsl:namespace name="foaf">http://xmlns.com/foaf/0.1/</xsl:namespace>
-            <!-- new JBH -->
-            <xsl:namespace name="marcrel">http://id.loc.gov/vocabulary/relators/</xsl:namespace>
             <xsl:namespace name="odrl">http://www.w3.org/ns/odrl/2/</xsl:namespace>
             <xsl:namespace name="ore">http://www.openarchives.org/ore/terms/</xsl:namespace>
             <xsl:namespace name="owl">http://www.w3.org/2002/07/owl#</xsl:namespace>
@@ -205,9 +249,8 @@
             </xsl:if>
             <!-- ./PROVIDED CHO -->
             
-            
-            <!-- new JBH -->
-            
+            <!-- proposed JBH ; but not compliant to EDM spec -->
+            <!--
             <xsl:for-each select="name[@authority and @valueURI]">
                 <xsl:if test="role/roleTerm[@type='code']='arc' or 
                     role/roleTerm[@type='code']='aut' or 
@@ -233,6 +276,7 @@
                         <xsl:element name="skos:prefLabel">
                             <xsl:value-of select="namePart"/>
                         </xsl:element>
+                        
                         <xsl:for-each select="role/roleTerm">
                             <xsl:choose>
                                 <xsl:when test=".='arc'">
@@ -411,6 +455,9 @@
                     </xsl:element>
                 </xsl:if>
             </xsl:for-each>
+            -->
+            
+            <!-- geographic subjects -->
             
             <xsl:for-each select="subject/geographic[@authority='geonames']">
                 <xsl:element name="edm:Place">
@@ -430,17 +477,19 @@
                 </xsl:element>
             </xsl:for-each>
             <xsl:for-each select="subject/geographic[@authority='naf' or @authority='lcsh' or @authority='viaf']">
-                <xsl:element name="edm:Place">
-                    <xsl:attribute name="rdf:about">
-                        <xsl:value-of select="@valueURI"/>
-                    </xsl:attribute>
-                    <xsl:element name="skos:prefLabel">
-                        <xsl:attribute name="xml:lang">
-                            <xsl:text>en</xsl:text>
+                <xsl:if test="not(preceding::*//@valueURI = @valueURI)">
+                    <xsl:element name="edm:Place">
+                        <xsl:attribute name="rdf:about">
+                            <xsl:value-of select="@valueURI"/>
                         </xsl:attribute>
-                        <xsl:value-of select="."/>
+                        <xsl:element name="skos:prefLabel">
+                            <xsl:attribute name="xml:lang">
+                                <xsl:text>en</xsl:text>
+                            </xsl:attribute>
+                            <xsl:value-of select="."/>
+                        </xsl:element>
                     </xsl:element>
-                </xsl:element>
+                </xsl:if>
             </xsl:for-each>
             <xsl:for-each select="subject[@xlink:title='GeoNames' and not(@authority)]/geographic">
                 <xsl:element name="edm:Place">
@@ -572,7 +621,7 @@
                         <xsl:value-of select="$format"/>
                     </xsl:element>
 
-                    <!-- dcterms:extent, id: xx -->
+                    <!-- dcterms:extent, id: xx - Nota bene: use of extent element more variable than assumed in original XSLT - JBH -->
                     <!--
                     <xsl:element name="dcterms:extent">
                         <xsl:attribute name="xml:lang">
@@ -594,7 +643,7 @@
                     </xsl:element>
  -->
 
-                    <!-- dcterms:extent, id: xx -->
+                    <!-- dcterms:extent, id: xx - JBH-->
                     <xsl:for-each select="/mods/relatedItem[@type = 'constituent'][1]/physicalDescription/extent">
                         <xsl:choose>
                             <xsl:when test="position() = 1">
@@ -818,7 +867,8 @@
                             </xsl:for-each>
                         </xsl:element>
 
-                        <!-- Main Description - new JBH added abstract -->
+                        <!-- Main Description - JBH added abstract, which if present provides the primary resource description (can occur multiply) -->
+                        
                         <xsl:for-each select="abstract">
                             <xsl:element name="dc:description">
                                 <xsl:attribute name="xml:lang">
@@ -827,12 +877,13 @@
                                 <xsl:value-of select="normalize-space(.)"/>
                             </xsl:element>
                         </xsl:for-each>
+                        
                         <xsl:for-each select="note">
                             <xsl:element name="dc:description">
                                 <xsl:attribute name="xml:lang">
                                     <xsl:value-of select="'en'"/>
                                 </xsl:attribute>
-                                <!-- the following constants carry over from EAD finding aid element labels - JBH -->
+                                <!-- the following constants carry over from EAD finding aid element labels, or refer to mods:not/@type - JBH -->
                                 <xsl:choose>
                                     <xsl:when test="@displayLabel='Acquisition details' and not(preceding::note/@displayLabel='Acquisition details')">
                                         <xsl:text>Acquisition details: </xsl:text>
@@ -848,6 +899,21 @@
                                     </xsl:when>
                                     <xsl:when test="@displayLabel='Scope and content' and not(preceding::note/@displayLabel='Scope and content')">
                                         <xsl:text>Scope and content: </xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="@type='citation/reference'">
+                                        <xsl:text>Citation/reference: </xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="@type='creation/production credits'">
+                                        <xsl:text>Xreation/production credits: </xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="@type='funding'">
+                                        <xsl:text>Funding: </xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="@type='preferred citation'">
+                                        <xsl:text>Preferred citation: </xsl:text>
+                                    </xsl:when>
+                                    <xsl:when test="@type='ownership'">
+                                        <xsl:text>Provenance: </xsl:text>
                                     </xsl:when>
                                 </xsl:choose>
                                 <xsl:value-of select="normalize-space(.)"/>
@@ -1095,7 +1161,6 @@
                                 </xsl:element>
                             </xsl:if>
                         </xsl:for-each>
-                        
 
                         <!-- dc:title, id: 274 -->
                         <xsl:element name="dc:title">
@@ -1145,7 +1210,7 @@
                         </xsl:for-each>
                         -->
                         
-                        <!-- new JBH -->
+                        <!-- new JBH ; note that added rdfs:label attribute not called for in EDM specification though often useful in identifying the agent's relationship to the resource -->
                         <!-- names, parallel top-level statements in edm:Agent -->
                         <xsl:for-each select="name[@authority and @valueURI]">
                             <xsl:if test="role/roleTerm[@type='code']='arc' or 
@@ -1275,7 +1340,7 @@
                                         </xsl:with-param>
                                     </xsl:call-template>
                                 </xsl:attribute>
-                                <!--
+                                <!-- not called for by EDM spec ...
                                 <xsl:element name="skos:prefLabel">
                                     <xsl:attribute name="xml:lang">
                                         <xsl:text>en</xsl:text>
@@ -1306,7 +1371,7 @@
                                         </xsl:with-param>
                                     </xsl:call-template>
                                 </xsl:attribute>
-                                <!--
+                                <!-- not called for by EDM spec ...
                                 <xsl:element name="skos:prefLabel">
                                     <xsl:attribute name="xml:lang">
                                         <xsl:text>en</xsl:text>
@@ -1327,41 +1392,6 @@
                                         <xsl:element name="wgs84:long">
                                             <xsl:value-of select="substring-after(.,',')"/>
                                         </xsl:element>
-                                        <xsl:choose>
-                                            <xsl:when test="../../geographic" exclude-result-prefixes="mods mets">
-                                                <xsl:variable name="prefLabel">
-                                                        <xsl:value-of select="../../geographic[1]"/>
-                                                </xsl:variable>
-                                                <!--
-                                                <xsl:if test="string-length($prefLabel) &gt; 0">
-                                                    <skos:prefLabel>
-                                                        <xsl:attribute name="xml:lang">
-                                                            <xsl:text>en</xsl:text>
-                                                        </xsl:attribute>
-                                                        <xsl:value-of select="normalize-space($prefLabel)"/>
-                                                    </skos:prefLabel>
-                                                </xsl:if>
-                                                -->
-                                            </xsl:when>
-                                            <xsl:when test="preceding::subject/geographic" exclude-result-prefixes="mods mets">
-                                                <xsl:variable name="prefLabel">
-                                                    <xsl:for-each select="preceding::subject/geographic">
-                                                        <xsl:value-of select="."/>
-                                                        <xsl:text> -- </xsl:text>
-                                                    </xsl:for-each>
-                                                </xsl:variable>
-                                                <!--
-                                                <xsl:if test="string-length($prefLabel) &gt; 0">
-                                                    <skos:prefLabel>
-                                                        <xsl:attribute name="xml:lang">
-                                                            <xsl:text>en</xsl:text>
-                                                        </xsl:attribute>
-                                                        <xsl:value-of select="normalize-space(substring($prefLabel,1,string-length($prefLabel)-3))"/>
-                                                    </skos:prefLabel>
-                                                </xsl:if>
-                                                -->
-                                            </xsl:when>
-                                        </xsl:choose>
                                     </xsl:element>
                                 </xsl:if>
                                 <xsl:if test="contains(.,'eastlimit')">
@@ -1379,9 +1409,40 @@
                             </xsl:for-each>
                         </xsl:for-each>
                         
-                        <!-- edm:type, id: 377 -->
+                        <!-- edm:type, id: 377 ; assume that stylesheet would also process non-image objects JBH -->
                         <xsl:element name="edm:type">
-                            <xsl:value-of select="'IMAGE'"/>
+                            <xsl:choose>
+                                <xsl:when test="typeOfResource='still image'">
+                                    <xsl:value-of select="'IMAGE'"/>
+                                </xsl:when>
+                                <xsl:when test="typeOfResource='cartographic'">
+                                    <xsl:value-of select="'IMAGE'"/>
+                                </xsl:when>
+                                <xsl:when test="typeOfResource='notated music'">
+                                    <xsl:value-of select="'IMAGE'"/>
+                                </xsl:when>
+                                <xsl:when test="typeOfResource='sound recording'">
+                                    <xsl:value-of select="'SOUND'"/>
+                                </xsl:when>
+                                <xsl:when test="typeOfResource='sound recording-musical'">
+                                    <xsl:value-of select="'SOUND'"/>
+                                </xsl:when>
+                                <xsl:when test="typeOfResource='sound recording-nonmusical'">
+                                    <xsl:value-of select="'SOUND'"/>
+                                </xsl:when>
+                                <xsl:when test="typeOfResource='moving image'">
+                                    <xsl:value-of select="'VIDEO'"/>
+                                </xsl:when>
+                                <xsl:when test="typeOfResource='three dimensional object'">
+                                    <xsl:value-of select="'3D'"/>
+                                </xsl:when>
+                                <xsl:when test="typeOfResource='text'">
+                                    <xsl:value-of select="'TEXT'"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:text>IMAGE</xsl:text>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </xsl:element>
 
                     </xsl:element>
