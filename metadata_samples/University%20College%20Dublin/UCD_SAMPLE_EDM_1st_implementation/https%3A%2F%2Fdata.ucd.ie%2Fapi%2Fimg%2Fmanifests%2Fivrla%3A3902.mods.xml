@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3
+    http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+    <titleInfo>
+        <title>[Letter from Roderic O'Connor (69 Lower Leeson Street) to Professor P. F. Purcell (Killiney), informing him that he has been shot by a sniper and is suspected of being with the Irish Volunteers. Requests a testimony of good character.]</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart>Curran, Constantine Peter, 1880-1972</namePart>
+        <role>
+            <roleTerm authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/fmo" type="code">fmo</roleTerm>
+            <roleTerm authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/fmo" type="text">Former owner</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart>O'Connor, Roderic P.</namePart>
+        <role>
+            <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/aut">aut</roleTerm>
+            <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/aut">Author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart>Purcell, Pierce F.</namePart>
+        <role>
+            <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/rcp">rcp</roleTerm>
+            <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/rcp">Recipient</roleTerm>
+        </role>
+    </name>
+    <typeOfResource manuscript="yes">text</typeOfResource>
+    <genre authority="bgtchm" authorityURI="http://memory.loc.gov/ammem/techdocs/genre.html">Correspondence</genre>
+    <originInfo>
+        <place>
+            <placeTerm type="text">69 Lower Leeson Street, Dublin</placeTerm>
+        </place>
+        <dateCreated>8 May 1916</dateCreated>
+        <dateCreated encoding="iso8601" keyDate="yes">1916-05-08</dateCreated>
+    </originInfo>
+    <subject displayLabel="Sender location">
+        <geographic>69 Lower Leeson Street, Dublin, Ireland</geographic>
+        <cartographics authority="OpenStreetMap" authorityURI="http://nominatim.openstreetmap.org/" valueURI="urn:osm:place_id:114297121">
+            <coordinates>53.33395135,-6.25443693872803</coordinates>
+        </cartographics>
+    </subject>
+    <subject displayLabel="Recipient location">
+        <geographic>Killiney, Co. Dublin, Ireland</geographic>
+        <cartographics authority="OpenStreetMap" authorityURI="http://nominatim.openstreetmap.org/" valueURI="urn:osm:place_id:2573346222">
+            <coordinates>53.2547887,-6.11811468178653</coordinates>
+        </cartographics>
+    </subject>
+    <language>
+        <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+        <languageTerm type="text" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+    </language>
+    <physicalDescription>
+        <extent>1 letter</extent>
+        <extent unit="cm">22.5 x 17.75</extent>
+    </physicalDescription>
+    <subject>
+        <name type="personal">
+            <namePart>Plunkett family</namePart>
+        </name>
+    </subject>
+    <subject>
+        <name type="corporate" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/129760787">
+            <namePart>Irish Volunteers</namePart>
+        </name>
+    </subject>
+    <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+        <name type="personal">
+            <namePart>O'Connor, Roderic P.</namePart>
+        </name>
+        <topic>Correspondence</topic>
+    </subject>
+    <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+        <name type="personal">
+            <namePart>Purcell, Pierce F.</namePart>
+        </name>
+        <topic>Correspondence</topic>
+    </subject>
+    <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh99002422#concept">
+        <name type="personal">
+            <namePart>O'Connor, Roderic P.</namePart>
+        </name>
+        <topic>Assassination attempts</topic>
+    </subject>
+    <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85129573#concept">
+        <topic>Subversive activities</topic>
+        <geographic>Ireland</geographic>
+    </subject>
+    <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85022913#concept">
+        <topic>Chemical industry</topic>
+        <geographic>Ireland</geographic>
+    </subject>
+    <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh00001124#concept">
+        <topic>Suspicion</topic>
+    </subject>
+    <subject displayLabel="Sender location">
+        <geographic authority="OpenStreetMap" authorityURI="http://nominatim.openstreetmap.org/" valueURI="urn:osm:place_id:9153576733">69 Leeson Street Lower, Dublin</geographic>
+        <cartographics>
+            <coordinates>53.3339513,-6.25443707328766</coordinates>
+        </cartographics>
+    </subject>
+    <identifier type="hdl" invalid="yes">hdl:10151/OB_1000017_SC</identifier>
+    <identifier type="local">OB_1000017_SC</identifier>
+    <identifier type="EADseries">IVRLA10-III:18</identifier>
+    <location>
+        <physicalLocation type="institution">UCD Library</physicalLocation>
+        <physicalLocation type="repository">UCD Library Special Collections</physicalLocation>
+        <physicalLocation type="collection">UCD Letters</physicalLocation>
+        <physicalLocation type="originalRef">UCD L 18</physicalLocation>
+    </location>
+    <recordInfo>
+        <recordCreationDate encoding="iso8601">2005-11-25</recordCreationDate>
+        <recordContentSource>UCD Library, University College Dublin</recordContentSource>
+        <recordOrigin>Descriptions created by IVRLA project staff, UCD Library, University College Dublin.</recordOrigin>
+        <languageOfCataloging>
+            <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+            <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+            <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+            <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+        </languageOfCataloging>
+    </recordInfo>
+    <accessCondition type="useAndReproduction" displayLabel="Copyright of digital resource">© University College Dublin, National University of Ireland, Dublin. Copyright and reproduction rights for this digital resource are held by
+        University College Dublin and administered by UCD Archives, UCD James Joyce Library, Belfield, Dublin 4, Ireland.</accessCondition>
+    <accessCondition type="useAndReproduction" displayLabel="Creative Commons licence" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Use of this resource is governed by the terms and conditions of the Creative Commons
+        "Attribution-NonCommercial-ShareAlike" License &lt;http://creativecommons.org/licenses/by-nc-sa/4.0/&gt;</accessCondition>
+    <accessCondition type="useAndReproduction" displayLabel="Commercial use details" xlink:href="http://digital.ucd.ie/terms/">To use for commercial purposes, please contact the UCD Digital Library</accessCondition>
+    <accessCondition type="useAndReproduction" displayLabel="Suggested credit">"[Letter from Roderic O'Connor (69 Lower Leeson Street) to Professor P F Purcell (Killiney), informing him that he has been shot by a sniper and is suspected of
+        being with the Irish Volunteers Requests a testimony of good character]," held by UCD Archives. © University College Dublin. Digital content: © University College Dublin, published by UCD Library, University College Dublin
+        &lt;http://digital.ucd.ie/view/ivrla:3902&gt;</accessCondition>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>UCD Letters</title>
+        </titleInfo>
+        <typeOfResource collection="yes">text</typeOfResource>
+        <identifier type="uri">info:fedora/ivrla:3573</identifier>
+        <identifier type="local">EAD_0000012_SC</identifier>
+    </relatedItem>
+    <relatedItem type="constituent">
+        <titleInfo>
+            <title>Letter from Roderic O'Connor (69 Lower Leeson Street) to Professor P F Purcell (Killiney), informing him that he has been shot by a sniper and is suspected of being with the Irish Volunteers Requests a testimony of good character</title>
+            <subTitle>[Pages 1 &amp; 2]</subTitle>
+        </titleInfo>
+        <typeOfResource>text</typeOfResource>
+        <identifier type="uri">info:fedora/ivrla:3903</identifier>
+        <identifier type="local">SC_PM_1000059</identifier>
+        <physicalDescription>
+            <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+            <extent>1 still image : digital</extent>
+            <extent unit="MB">38</extent>
+            <extent unit="pixels">3229x4065</extent>
+            <internetMediaType>image/tiff</internetMediaType>
+            <internetMediaType>image/jp2</internetMediaType>
+            <internetMediaType>image/jpeg</internetMediaType>
+            <digitalOrigin>reformatted digital</digitalOrigin>
+            <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+        </physicalDescription>
+        <physicalDescription displayLabel="Original item">
+            <extent>22.5 x 17.75 (cm)</extent>
+        </physicalDescription>
+    </relatedItem>
+    <identifier type="uri">info:fedora/ivrla:3902</identifier>
+</mods>

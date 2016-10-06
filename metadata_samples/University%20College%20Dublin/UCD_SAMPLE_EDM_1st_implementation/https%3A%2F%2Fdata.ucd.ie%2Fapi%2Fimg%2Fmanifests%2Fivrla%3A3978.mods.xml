@@ -1,0 +1,310 @@
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+  <titleInfo>
+    <title>[Letter from Gerard Manley Hopkins (Blunt House, Croydon) to Alexander William Mowbray Baillie, discussing his reading and writing; the writing of poetry of 'inspiration'; Parnassianism; 'The Odyssey' and Homer.]</title>
+  </titleInfo>
+  <name type="personal">
+    <namePart>Curran, Constantine Peter, 1880-1972</namePart>
+    <role>
+      <roleTerm authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/fmo" type="code">fmo</roleTerm>
+      <roleTerm authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/fmo" type="text">Former owner</roleTerm>
+    </role>
+  </name>
+  <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/64062958">
+    <namePart>Hopkins, Gerard Manley, 1844-1889</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/aut">aut</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/aut">Author</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>Baillie, Alexander William Mowbray, 1843-1921</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/rcp">rcp</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/rcp">Recipient</roleTerm>
+    </role>
+  </name>
+  <typeOfResource manuscript="yes">text</typeOfResource>
+  <genre authority="bgtchm" authorityURI="http://memory.loc.gov/ammem/techdocs/genre.html">Correspondence</genre>
+  <originInfo>
+    <place>
+      <placeTerm type="text">Blunt House, Croydon, London, England</placeTerm>
+    </place>
+    <dateCreated>10, 11 September 1864</dateCreated>
+    <dateCreated encoding="iso8601" keyDate="yes">1864-09-10/1864-09-11</dateCreated>
+  </originInfo>
+  <subject displayLabel="Sender address">
+    <geographic>Blunt House, Croydon, London, England</geographic>
+    <cartographics>
+      <coordinates>51.364822,-0.097761</coordinates>
+    </cartographics>
+  </subject>
+  <language>
+    <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+    <languageTerm type="text" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>1 letter</extent>
+    <extent unit="cm">24.75 x 20</extent>
+  </physicalDescription>
+  <note>This letter is published in 'Further letters of Gerard Manley Hopkins, including his correspondence with Coventry Patmore', ed. Claude Colleer Abbott, 2nd ed. (London: OUP, 1956).</note>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85076220#concept">
+    <topic>Letter writing</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85103705#concept">
+    <topic>Poetry</topic>
+    <topic>Authorship</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85010030#concept">
+    <topic>Authorship</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85098241#concept">
+    <topic>Parnassianism</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh99005576#concept">
+    <name type="personal">
+      <namePart>Homer</namePart>
+    </name>
+    <topic>Criticism and interpretation</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85015758#concept">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/64062958">
+      <namePart>Hopkins, Gerard Manley, 1844-1889</namePart>
+    </name>
+    <topic>Books and reading</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+    <name type="personal">
+      <namePart>Baillie, Alexander William Mowbray, 1843-1921</namePart>
+    </name>
+    <topic>Correspondence</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/64062958">
+      <namePart>Hopkins, Gerard Manley, 1844-1889</namePart>
+    </name>
+    <topic>Correspondence</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh87002375#concept">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/64062958">
+      <namePart>Hopkins, Gerard Manley, 1844-1889</namePart>
+    </name>
+    <topic>Knowledge and learning</topic>
+  </subject>
+  <identifier type="hdl" invalid="yes">hdl:10151/OB_1000032_SC</identifier>
+  <identifier type="local">OB_1000032_SC</identifier>
+  <identifier type="EADseries">IVRLA10-VI:33</identifier>
+  <location>
+    <physicalLocation type="institution">UCD Library</physicalLocation>
+    <physicalLocation type="repository">UCD Library Special Collections</physicalLocation>
+    <physicalLocation type="collection">UCD Letters</physicalLocation>
+    <physicalLocation type="originalRef">UCD L 33</physicalLocation>
+  </location>
+  <recordInfo>
+    <recordCreationDate encoding="iso8601">2005-11-28</recordCreationDate>
+    <recordContentSource>UCD Library, University College Dublin</recordContentSource>
+    <recordOrigin>Descriptions created by IVRLA project staff, UCD Library, University College Dublin.</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+      <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+      <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  <accessCondition type="useAndReproduction" displayLabel="Copyright of digital resource">© University College Dublin, National University of Ireland, Dublin. Copyright and reproduction rights for this digital resource are held by University College Dublin and administered by UCD Archives, UCD James Joyce Library, Belfield, Dublin 4, Ireland.</accessCondition>
+  <accessCondition type="useAndReproduction" displayLabel="Creative Commons licence" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Use of this resource is governed by the terms and conditions of the Creative Commons "Attribution-NonCommercial-ShareAlike" License &lt;http://creativecommons.org/licenses/by-nc-sa/4.0/&gt;</accessCondition>
+  <accessCondition type="useAndReproduction" displayLabel="Commercial use details" xlink:href="http://digital.ucd.ie/terms/">To use for commercial purposes, please contact the UCD Digital Library</accessCondition>
+  <accessCondition type="useAndReproduction" displayLabel="Suggested credit">"[Letter from Gerard Manley Hopkins (Blunt House, Croydon) to Alexander William Mowbray Baillie, discussing his reading and writing; the writing of poetry of 'inspiration'; Parnassianism; 'The Odyssey' and Homer]," held by UCD Archives. © University College Dublin. Digital content: © University College Dublin, published by UCD Library, University College Dublin &lt;http://digital.ucd.ie/view/ivrla:3978&gt;</accessCondition>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>UCD Letters</title>
+    </titleInfo>
+    <typeOfResource collection="yes">text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3573</identifier>
+    <identifier type="local">EAD_0000012_SC</identifier>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Gerard Manley Hopkins (Blunt House, Croydon) to Alexander William Mowbray Baillie, discussing his reading and writing; the writing of poetry of 'inspiration'; Parnassianism; 'The Odyssey' and Homer</title>
+      <subTitle>[Pages 4 &amp; 1]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3979</identifier>
+    <identifier type="local">SC_PM_1000120</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">47</extent>
+      <extent unit="pixels">3650x4481</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>24.75 x 20 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Gerard Manley Hopkins (Blunt House, Croydon) to Alexander William Mowbray Baillie, discussing his reading and writing; the writing of poetry of 'inspiration'; Parnassianism; 'The Odyssey' and Homer</title>
+      <subTitle>[Pages 2 &amp; 3]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3980</identifier>
+    <identifier type="local">SC_PM_1000121</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">47</extent>
+      <extent unit="pixels">3650x4491</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>24.75 x 20 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Gerard Manley Hopkins (Blunt House, Croydon) to Alexander William Mowbray Baillie, discussing his reading and writing; the writing of poetry of 'inspiration'; Parnassianism; 'The Odyssey' and Homer</title>
+      <subTitle>[Pages 12 &amp; 9]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3981</identifier>
+    <identifier type="local">SC_PM_1000122</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">47</extent>
+      <extent unit="pixels">3641x4501</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>24.75 x 20 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Gerard Manley Hopkins (Blunt House, Croydon) to Alexander William Mowbray Baillie, discussing his reading and writing; the writing of poetry of 'inspiration'; Parnassianism; 'The Odyssey' and Homer</title>
+      <subTitle>[Pages 10 &amp; 11]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3982</identifier>
+    <identifier type="local">SC_PM_1000123</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">47</extent>
+      <extent unit="pixels">3650x4501</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>24.75 x 20 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Gerard Manley Hopkins (Blunt House, Croydon) to Alexander William Mowbray Baillie, discussing his reading and writing; the writing of poetry of 'inspiration'; Parnassianism; 'The Odyssey' and Homer</title>
+      <subTitle>[Pages 6 &amp; 7]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3983</identifier>
+    <identifier type="local">SC_PM_1000124</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">47</extent>
+      <extent unit="pixels">3641x4491</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>24.75 x 20 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Gerard Manley Hopkins (Blunt House, Croydon) to Alexander William Mowbray Baillie, discussing his reading and writing; the writing of poetry of 'inspiration'; Parnassianism; 'The Odyssey' and Homer</title>
+      <subTitle>[Pages 8 &amp; 5]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3984</identifier>
+    <identifier type="local">SC_PM_1000125</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">47</extent>
+      <extent unit="pixels">3650x4481</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>24.75 x 20 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Gerard Manley Hopkins (Blunt House, Croydon) to Alexander William Mowbray Baillie, discussing his reading and writing; the writing of poetry of 'inspiration'; Parnassianism; 'The Odyssey' and Homer</title>
+      <subTitle>[Pages 14 &amp; 15]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3985</identifier>
+    <identifier type="local">SC_PM_1000126</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">53</extent>
+      <extent unit="pixels">3795x4877</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>27 x 20.75 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Gerard Manley Hopkins (Blunt House, Croydon) to Alexander William Mowbray Baillie, discussing his reading and writing; the writing of poetry of 'inspiration'; Parnassianism; 'The Odyssey' and Homer</title>
+      <subTitle>[Pages 16 &amp; 13]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3986</identifier>
+    <identifier type="local">SC_PM_1000127</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">52</extent>
+      <extent unit="pixels">3776x4857</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>27 x 20.75 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <identifier type="uri">info:fedora/ivrla:3978</identifier>
+</mods>

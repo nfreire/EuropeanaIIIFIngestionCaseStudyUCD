@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:crm="http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.0.2_english_label.rdfs#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:doap="http://usefulinc.com/ns/doap#"
+         xmlns:edm="http://www.europeana.eu/schemas/edm/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+         xmlns:ore="http://www.openarchives.org/ore/terms/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:svcs="http://rdfs.org/sioc/services#"
+         xmlns:wgs84="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:xalan="http://xml.apache.org/xalan"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <edm:ProvidedCHO rdf:about="ivrla:3904"/>
+   <edm:Place rdf:about="http://id.loc.gov/authorities/subjects/sh2011002858#concept">
+      <skos:prefLabel xml:lang="en">Hawarden Castle (Hawarden, Wales)</skos:prefLabel>
+   </edm:Place>
+   <edm:WebResource rdf:about="https://iiif.ucd.ie/loris/ivrla:3905/full/full/0/default.jpg">
+      <dc:format>image/jpeg</dc:format>
+      <dcterms:extent xml:lang="en">1 still image : digital</dcterms:extent>
+      <dcterms:extent>19 MB</dcterms:extent>
+      <dcterms:extent>3246x2081 pixels</dcterms:extent>
+      <dcterms:extent>11.25 x 17.75 (cm)</dcterms:extent>
+      <dcterms:isReferencedBy rdf:resource="https://data.ucd.ie/api/img/manifests/ivrla:3904"/>
+      <svcs:has_service rdf:resource="https://iiif.ucd.ie/loris/ivrla:3905"/>
+   </edm:WebResource>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85061708#concept">
+      <skos:prefLabel xml:lang="en">Home Rule</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85068117#concept">
+      <skos:prefLabel xml:lang="en">Irish question</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85068041#concept">
+      <skos:prefLabel xml:lang="en">Politics and government</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85092560#concept">
+      <skos:prefLabel xml:lang="en">Politics and government</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85108732#concept">
+      <skos:prefLabel xml:lang="en">Public meetings</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+      <skos:prefLabel xml:lang="en">Correspondence</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+      <skos:prefLabel xml:lang="en">Correspondence</skos:prefLabel>
+   </skos:Concept>
+   <ore:Aggregation rdf:about="ivrla:3904_Aggregation">
+      <edm:aggregatedCHO rdf:resource="ivrla:3904"/>
+      <edm:dataProvider>UCD Library</edm:dataProvider>
+      <edm:dataProvider>University College Dublin</edm:dataProvider>
+      <edm:isShownAt rdf:resource="https://digital.ucd.ie/view/ivrla:3904"/>
+      <edm:isShownBy rdf:resource="https://iiif.ucd.ie/loris/ivrla:3905/full/full/0/default.jpg"/>
+      <edm:object rdf:resource="https://iiif.ucd.ie/loris/ivrla:3905/full/600,/0/default.jpg"/>
+      <edm:provider>University College Dublin</edm:provider>
+      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+   </ore:Aggregation>
+   <ore:Proxy rdf:about="ivrla:3904">
+      <dc:description xml:lang="en">Physical location: UCD Library, UCD Library Special Collections, UCD Letters, UCD L 19</dc:description>
+      <dc:format xml:lang="en">1 letter 11.25 x 17.75</dc:format>
+      <dc:format>image/jpeg</dc:format>
+      <dc:identifier>OB_1000018_SC</dc:identifier>
+      <dc:identifier>EADseries:IVRLA10:19</dc:identifier>
+      <dc:identifier>ivrla:3904</dc:identifier>
+      <dc:identifier>http://digital.ucd.ie/view/ivrla:3904</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:rights xml:lang="en">© University College Dublin, National University of Ireland, Dublin. Copyright and reproduction rights for this digital resource are held by University College Dublin and administered by UCD Archives, UCD James Joyce Library, Belfield, Dublin 4, Ireland.</dc:rights>
+      <dc:rights xml:lang="en">To use for commercial purposes, please contact the UCD Digital Library</dc:rights>
+      <dc:rights xml:lang="en">Suggested credit: "[Letter from W (William Ewart) Gladstone (Hawarden) to [C A Oldhenny ?], regarding the anti-nationalist stance of the Protestants of Belfast, on the visit of Lord Hartington Hopes that the meeting in Dublin will bring out the Irish Protestants who support Home Rule]," held by UCD Archives. © University College Dublin. Digital content: © University College Dublin, published by UCD Library, University College Dublin &lt;http://digital.ucd.ie/view/ivrla:3904&gt;</dc:rights>
+      <dc:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/">Use of this resource is governed by the Creative Commons - Attribution, Non-Commercial, ShareAlike (BY-NC-SA) license.</dc:rights>
+      <dc:source xml:lang="en">UCD Library, University College Dublin</dc:source>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85061708#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85068117#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85068041#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85092560#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85108732#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85033035#concept"/>
+      <dc:subject xml:lang="en">Devonshire, Spencer Compton Cavendish, Duke of, 1833-1908</dc:subject>
+      <dc:subject xml:lang="en">Gladstone, W. E. (William Ewart), 1809-1898--Correspondence</dc:subject>
+      <dc:subject xml:lang="en">Oldhenny, C. A.--Correspondence</dc:subject>
+      <dc:subject xml:lang="en">Ireland--geographic</dc:subject>
+      <dc:subject xml:lang="en">Northern Ireland--geographic</dc:subject>
+      <dc:subject xml:lang="en">Hawarden Castle (Hawarden, Wales)--geographic</dc:subject>
+      <dc:subject xml:lang="en">Home Rule--Ireland</dc:subject>
+      <dc:subject xml:lang="en">Irish question</dc:subject>
+      <dc:subject xml:lang="en">Ireland--Politics and government</dc:subject>
+      <dc:subject xml:lang="en">Public meetings--Ireland</dc:subject>
+      <dc:subject xml:lang="en">Correspondence</dc:subject>
+      <dc:title xml:lang="en">[Letter from W. (William Ewart) Gladstone (Hawarden) to [C. A. Oldhenny ?], regarding the anti-nationalist stance of the Protestants of Belfast, on the visit of Lord Hartington. Hopes that the meeting in Dublin will bring out the Irish Protestants who support Home Rule.]</dc:title>
+      <dc:type xml:lang="en">text</dc:type>
+      <dc:type xml:lang="en">Correspondence</dc:type>
+      <dcterms:isPartOf rdf:resource="ivrla:3573"/>
+      <dc:contributor rdf:resource="http://viaf.org/viaf/71411983" rdfs:label="Author"/>
+      <dcterms:spatial rdf:resource="http://id.loc.gov/authorities/subjects/sh2011002858#concept"/>
+      <dcterms:spatial>
+         <wgs84:lat>53.18175195</wgs84:lat>
+         <wgs84:long>-3.0161054172868</wgs84:long>
+      </dcterms:spatial>
+      <edm:type>TEXT</edm:type>
+   </ore:Proxy>
+   <edm:EuropeanaAggregation rdf:about="ivrla:3904_EuropeanaAggregation">
+      <edm:aggregatedCHO rdf:resource="ivrla:3904"/>
+      <edm:country>Ireland</edm:country>
+      <edm:language>en</edm:language>
+      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+   </edm:EuropeanaAggregation>
+   <svcs:Service rdf:about="https://iiif.ucd.ie/loris/ivrla:3905">
+      <dcterms:conformsTo rdf:resource="http://iiif.io/api/image"/>
+      <dcterms:isReferencedBy rdf:resource="https://data.ucd.ie/api/img/manifests/ivrla:3904"/>
+      <doap:implements rdf:resource="http://iiif.io/api/image/2/level2.json"/>
+   </svcs:Service>
+</rdf:RDF>

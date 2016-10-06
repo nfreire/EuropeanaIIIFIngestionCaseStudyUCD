@@ -1,0 +1,312 @@
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+  <titleInfo>
+    <title>[Letter from Martin A. O'Brennan (57 Bolton Street) to Eugene O'Curry, enclosing and commenting on a pseudonymous malicious letter, signed 'William John O'Brennan'.]</title>
+  </titleInfo>
+  <name type="personal">
+    <namePart>Curran, Constantine Peter, 1880-1972</namePart>
+    <role>
+      <roleTerm authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/fmo" type="code">fmo</roleTerm>
+      <roleTerm authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/fmo" type="text">Former owner</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>O'Brennan, Martin A.</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/aut">aut</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/aut">Author</roleTerm>
+    </role>
+  </name>
+  <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/73861970">
+    <namePart>Cullen, Paul, 1803-1878</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/rcp">rcp</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/rcp">Recipient</roleTerm>
+    </role>
+  </name>
+  <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/381638">
+    <namePart>O'Curry, Eugene, 1796-1862</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/rcp">rcp</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/rcp">Recipient</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>O'Brennan, William John [pseud. ?]</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/aut">aut</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/aut">Author</roleTerm>
+    </role>
+  </name>
+  <typeOfResource manuscript="yes">text</typeOfResource>
+  <genre authority="bgtchm" authorityURI="http://memory.loc.gov/ammem/techdocs/genre.html">Correspondence</genre>
+  <originInfo>
+    <place>
+      <placeTerm type="text">57 Bolton Street, Dublin</placeTerm>
+    </place>
+    <dateCreated>24 June 1854</dateCreated>
+    <dateCreated encoding="iso8601" keyDate="yes">1854-06-24</dateCreated>
+  </originInfo>
+  <subject displayLabel="Sender location">
+    <geographic>57 Bolton Street, Dublin</geographic>
+    <cartographics authority="OpenStreetMap" authorityURI="http://nominatim.openstreetmap.org/" valueURI="urn:osm:place_id:2589556617">
+      <coordinates>53.3513352,-6.27010965661971</coordinates>
+    </cartographics>
+  </subject>
+  <language>
+    <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+    <languageTerm type="text" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>1 letter</extent>
+    <extent unit="cm">18 x 23</extent>
+  </physicalDescription>
+  <note>Letter 1: From Martin A. O'Brennan to Eugene O'Curry, concerning and enclosing a pseudonymous, malicious letter. Written on the reverse side of a printed letter from O'Brennan to the Archbishop of Dublin, Paul Cullen (Letter 2). --Letter 2: From Martin A. O'Brennan to the Archbishop of Dublin, Paul Cullen, discussing his
+          opinion that Catholic youth should be educated by secular men, as opposed to members of the clergy.</note>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85041033#concept">
+    <topic>Education</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject>
+    <name type="corporate" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/134130814">
+      <namePart>Catholic University of Ireland</namePart>
+    </name>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85076432#concept">
+    <topic>Libel and slander</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/sh00005810#concept">
+    <topic>Letters</topic>
+    <topic>Forgeries</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85005416#concept">
+    <topic>Anonyms and pseudonyms</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/73861970">
+      <namePart>Cullen, Paul, 1803-1878</namePart>
+    </name>
+    <topic>Correspondence</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85028378#concept">
+    <topic>College teachers</topic>
+    <geographic>Ireland</geographic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+    <name type="personal">
+      <namePart>O'Brennan, Martin A.</namePart>
+    </name>
+    <topic>Correspondence</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/381638">
+      <namePart>O'Curry, Eugene, 1796-1862</namePart>
+    </name>
+    <topic>Correspondence</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+    <name type="personal">
+      <namePart>O'Brennan, William John [pseud. ?]</namePart>
+    </name>
+    <topic>Correspondence</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85001081#concept">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/381638">
+      <namePart>O'Curry, Eugene, 1796-1862</namePart>
+    </name>
+    <topic>Adversaries</topic>
+  </subject>
+  <identifier type="hdl" invalid="yes">hdl:10151/OB_1000024_SC</identifier>
+  <identifier type="local">OB_1000024_SC</identifier>
+  <identifier type="EADseries">IVRLA10:25</identifier>
+  <location>
+    <physicalLocation type="institution">UCD Library</physicalLocation>
+    <physicalLocation type="repository">UCD Library Special Collections</physicalLocation>
+    <physicalLocation type="collection">UCD Letters</physicalLocation>
+    <physicalLocation type="originalRef">UCD L 25</physicalLocation>
+  </location>
+  <recordInfo>
+    <recordCreationDate encoding="iso8601">2005-11-25</recordCreationDate>
+    <recordContentSource>UCD Library, University College Dublin</recordContentSource>
+    <recordOrigin>Descriptions created by IVRLA project staff, UCD Library, University College Dublin.</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+      <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+      <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  <accessCondition type="useAndReproduction" displayLabel="Copyright of digital resource">© University College Dublin, National University of Ireland, Dublin. Copyright and reproduction rights for this digital resource are held by University College Dublin and administered by UCD Archives, UCD James Joyce Library, Belfield, Dublin 4, Ireland.</accessCondition>
+  <accessCondition type="useAndReproduction" displayLabel="Creative Commons licence" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Use of this resource is governed by the terms and conditions of the Creative Commons "Attribution-NonCommercial-ShareAlike" License &lt;http://creativecommons.org/licenses/by-nc-sa/4.0/&gt;</accessCondition>
+  <accessCondition type="useAndReproduction" displayLabel="Commercial use details" xlink:href="http://digital.ucd.ie/terms/">To use for commercial purposes, please contact the UCD Digital Library</accessCondition>
+  <accessCondition type="useAndReproduction" displayLabel="Suggested credit">"[Letter from Martin A O'Brennan (57 Bolton Street) to Eugene O'Curry, enclosing and commenting on a pseudonymous malicious letter, signed 'William John O'Brennan']," held by UCD Archives. © University College Dublin. Digital content: © University College Dublin, published by UCD Library, University College Dublin &lt;http://digital.ucd.ie/view/ivrla:3928&gt;</accessCondition>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>UCD Letters</title>
+    </titleInfo>
+    <typeOfResource collection="yes">text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3573</identifier>
+    <identifier type="local">EAD_0000012_SC</identifier>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Martin A O'Brennan (57 Bolton Street) to Eugene O'Curry, enclosing and commenting on a pseudonymous malicious letter, signed 'William John O'Brennan'</title>
+      <subTitle>[Letter 1, page 1]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3929</identifier>
+    <identifier type="local">SC_PM_1000078</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">39</extent>
+      <extent unit="pixels">4173x3275</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>18 x 23 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Martin A O'Brennan (57 Bolton Street) to Eugene O'Curry, enclosing and commenting on a pseudonymous malicious letter, signed 'William John O'Brennan'</title>
+      <subTitle>[Letter 2, page 1]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3930</identifier>
+    <identifier type="local">SC_PM_1000079</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">39</extent>
+      <extent unit="pixels">4163x3275</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>18 x 23 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Martin A O'Brennan (57 Bolton Street) to Eugene O'Curry, enclosing and commenting on a pseudonymous malicious letter, signed 'William John O'Brennan'</title>
+      <subTitle>[Letter 2, pages 2 &amp; 3]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3931</identifier>
+    <identifier type="local">SC_PM_1000080</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">77</extent>
+      <extent unit="pixels">4173x6475</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>36 x 23 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Martin A O'Brennan (57 Bolton Street) to Eugene O'Curry, enclosing and commenting on a pseudonymous malicious letter, signed 'William John O'Brennan'</title>
+      <subTitle>[Letter 2, recipient address]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3932</identifier>
+    <identifier type="local">SC_PM_1000081</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">15</extent>
+      <extent unit="pixels">2426x2178</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>12 x 13.25 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Martin A O'Brennan (57 Bolton Street) to Eugene O'Curry, enclosing and commenting on a pseudonymous malicious letter, signed 'William John O'Brennan'</title>
+      <subTitle>[Letter 3, page 1]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3933</identifier>
+    <identifier type="local">SC_PM_1000082</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">20</extent>
+      <extent unit="pixels">3304x2101</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>11.5 x 18.25 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Martin A O'Brennan (57 Bolton Street) to Eugene O'Curry, enclosing and commenting on a pseudonymous malicious letter, signed 'William John O'Brennan'</title>
+      <subTitle>[Letter 3, pages 2 &amp; 3]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3934</identifier>
+    <identifier type="local">SC_PM_1000083</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">39</extent>
+      <extent unit="pixels">3304x4135</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>22.75 x 18.25 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from Martin A O'Brennan (57 Bolton Street) to Eugene O'Curry, enclosing and commenting on a pseudonymous malicious letter, signed 'William John O'Brennan'</title>
+      <subTitle>[Letter 3, page 4]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3935</identifier>
+    <identifier type="local">SC_PM_1000084</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">20</extent>
+      <extent unit="pixels">3294x2091</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>11.5 x 18.25 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <identifier type="uri">info:fedora/ivrla:3928</identifier>
+</mods>

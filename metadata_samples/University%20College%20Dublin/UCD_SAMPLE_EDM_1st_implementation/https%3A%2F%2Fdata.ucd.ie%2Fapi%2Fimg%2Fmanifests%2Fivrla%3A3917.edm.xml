@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:crm="http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.0.2_english_label.rdfs#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:doap="http://usefulinc.com/ns/doap#"
+         xmlns:edm="http://www.europeana.eu/schemas/edm/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+         xmlns:ore="http://www.openarchives.org/ore/terms/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:svcs="http://rdfs.org/sioc/services#"
+         xmlns:wgs84="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:xalan="http://xml.apache.org/xalan"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <edm:ProvidedCHO rdf:about="ivrla:3917"/>
+   <edm:WebResource rdf:about="https://iiif.ucd.ie/loris/ivrla:3918/full/full/0/default.jpg">
+      <dc:format>image/jpeg</dc:format>
+      <dcterms:extent xml:lang="en">1 still image : digital</dcterms:extent>
+      <dcterms:extent>42 MB</dcterms:extent>
+      <dcterms:extent>4221x3477 pixels</dcterms:extent>
+      <dcterms:extent>19.25 x 23.25 (cm)</dcterms:extent>
+      <dcterms:isReferencedBy rdf:resource="https://data.ucd.ie/api/img/manifests/ivrla:3917"/>
+      <svcs:has_service rdf:resource="https://iiif.ucd.ie/loris/ivrla:3918"/>
+   </edm:WebResource>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85061227#concept">
+      <skos:prefLabel xml:lang="en">History Sources</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+      <skos:prefLabel xml:lang="en">Correspondence</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+      <skos:prefLabel xml:lang="en">Correspondence</skos:prefLabel>
+   </skos:Concept>
+   <ore:Aggregation rdf:about="ivrla:3917_Aggregation">
+      <edm:aggregatedCHO rdf:resource="ivrla:3917"/>
+      <edm:dataProvider>UCD Library</edm:dataProvider>
+      <edm:dataProvider>University College Dublin</edm:dataProvider>
+      <edm:isShownAt rdf:resource="https://digital.ucd.ie/view/ivrla:3917"/>
+      <edm:isShownBy rdf:resource="https://iiif.ucd.ie/loris/ivrla:3918/full/full/0/default.jpg"/>
+      <edm:object rdf:resource="https://iiif.ucd.ie/loris/ivrla:3918/full/600,/0/default.jpg"/>
+      <edm:provider>University College Dublin</edm:provider>
+      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+   </ore:Aggregation>
+   <ore:Proxy rdf:about="ivrla:3917">
+      <dc:description xml:lang="en">Physical location: UCD Library, UCD Library Special Collections, UCD Letters, UCD L 23</dc:description>
+      <dc:format xml:lang="en">1 letter 19.25 x 23.25</dc:format>
+      <dc:format>image/jpeg</dc:format>
+      <dc:identifier>OB_1000022_SC</dc:identifier>
+      <dc:identifier>EADseries:IVRLA10-V:23</dc:identifier>
+      <dc:identifier>ivrla:3917</dc:identifier>
+      <dc:identifier>http://digital.ucd.ie/view/ivrla:3917</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:rights xml:lang="en">© University College Dublin, National University of Ireland, Dublin. Copyright and reproduction rights for this digital resource are held by University College Dublin and administered by UCD Archives, UCD James Joyce Library, Belfield, Dublin 4, Ireland.</dc:rights>
+      <dc:rights xml:lang="en">To use for commercial purposes, please contact the UCD Digital Library</dc:rights>
+      <dc:rights xml:lang="en">Suggested credit: "[Letter from James Roe to John D'Alton (48 Summerhill, Dublin), referring him to various sources of information for research on the history of Cashel]," held by UCD Archives. © University College Dublin. Digital content: © University College Dublin, published by UCD Library, University College Dublin &lt;http://digital.ucd.ie/view/ivrla:3917&gt;</dc:rights>
+      <dc:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/">Use of this resource is governed by the Creative Commons - Attribution, Non-Commercial, ShareAlike (BY-NC-SA) license.</dc:rights>
+      <dc:source xml:lang="en">UCD Library, University College Dublin</dc:source>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85061227#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85033035#concept"/>
+      <dc:subject xml:lang="en">O'Brien, John</dc:subject>
+      <dc:subject xml:lang="en">MacDonnell, -, Doctor</dc:subject>
+      <dc:subject xml:lang="en">Mansergh, Nicholas</dc:subject>
+      <dc:subject xml:lang="en">Roe, James--Correspondence</dc:subject>
+      <dc:subject xml:lang="en">D'Alton, John, 1792-1867--Correspondence</dc:subject>
+      <dc:subject xml:lang="en">48 Summerhill, Dublin, Ireland--geographic</dc:subject>
+      <dc:subject xml:lang="en">Cashel (Tipperary, Ireland)--geographic</dc:subject>
+      <dc:subject xml:lang="en">Cashel (Tipperary, Ireland)--History--Sources</dc:subject>
+      <dc:subject xml:lang="en">Correspondence</dc:subject>
+      <dc:title xml:lang="en">[Letter from James Roe to John D'Alton (48 Summerhill, Dublin), referring him to various sources of information for research on the history of Cashel.]</dc:title>
+      <dc:type xml:lang="en">text</dc:type>
+      <dc:type xml:lang="en">Correspondence</dc:type>
+      <dcterms:isPartOf rdf:resource="ivrla:3573"/>
+      <dcterms:spatial>
+         <wgs84:lat>53.3553532</wgs84:lat>
+         <wgs84:long>-6.2532131</wgs84:long>
+      </dcterms:spatial>
+      <edm:type>TEXT</edm:type>
+   </ore:Proxy>
+   <edm:EuropeanaAggregation rdf:about="ivrla:3917_EuropeanaAggregation">
+      <edm:aggregatedCHO rdf:resource="ivrla:3917"/>
+      <edm:country>Ireland</edm:country>
+      <edm:language>en</edm:language>
+      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+   </edm:EuropeanaAggregation>
+   <svcs:Service rdf:about="https://iiif.ucd.ie/loris/ivrla:3918">
+      <dcterms:conformsTo rdf:resource="http://iiif.io/api/image"/>
+      <dcterms:isReferencedBy rdf:resource="https://data.ucd.ie/api/img/manifests/ivrla:3917"/>
+      <doap:implements rdf:resource="http://iiif.io/api/image/2/level2.json"/>
+   </svcs:Service>
+</rdf:RDF>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:crm="http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.0.2_english_label.rdfs#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:doap="http://usefulinc.com/ns/doap#"
+         xmlns:edm="http://www.europeana.eu/schemas/edm/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+         xmlns:ore="http://www.openarchives.org/ore/terms/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:svcs="http://rdfs.org/sioc/services#"
+         xmlns:wgs84="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:xalan="http://xml.apache.org/xalan"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <edm:ProvidedCHO rdf:about="ivrla:3963"/>
+   <edm:WebResource rdf:about="https://iiif.ucd.ie/loris/ivrla:3964/full/full/0/default.jpg">
+      <dc:format>image/jpeg</dc:format>
+      <dcterms:extent xml:lang="en">1 still image : digital</dcterms:extent>
+      <dcterms:extent>38 MB</dcterms:extent>
+      <dcterms:extent>3217x4135 pixels</dcterms:extent>
+      <dcterms:extent>22.75 x 17.75 (cm)</dcterms:extent>
+      <dcterms:isReferencedBy rdf:resource="https://data.ucd.ie/api/img/manifests/ivrla:3963"/>
+      <svcs:has_service rdf:resource="https://iiif.ucd.ie/loris/ivrla:3964"/>
+   </edm:WebResource>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85025567#concept">
+      <skos:prefLabel xml:lang="en">Church architecture</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85025568#concept">
+      <skos:prefLabel xml:lang="en">Church buildings Conservation and restoration</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85047403#concept">
+      <skos:prefLabel xml:lang="en">Fasting</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+      <skos:prefLabel xml:lang="en">Correspondence</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh2007000590#concept">
+      <skos:prefLabel xml:lang="en">Homecoming</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh00005743#concept">
+      <skos:prefLabel xml:lang="en">Family</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+      <skos:prefLabel xml:lang="en">Correspondence</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85004931#concept">
+      <skos:prefLabel xml:lang="en">Anecdotes</skos:prefLabel>
+   </skos:Concept>
+   <ore:Aggregation rdf:about="ivrla:3963_Aggregation">
+      <edm:aggregatedCHO rdf:resource="ivrla:3963"/>
+      <edm:dataProvider>UCD Library</edm:dataProvider>
+      <edm:dataProvider>University College Dublin</edm:dataProvider>
+      <edm:isShownAt rdf:resource="https://digital.ucd.ie/view/ivrla:3963"/>
+      <edm:isShownBy rdf:resource="https://iiif.ucd.ie/loris/ivrla:3964/full/full/0/default.jpg"/>
+      <edm:object rdf:resource="https://iiif.ucd.ie/loris/ivrla:3964/full/600,/0/default.jpg"/>
+      <edm:provider>University College Dublin</edm:provider>
+      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+   </ore:Aggregation>
+   <ore:Proxy rdf:about="ivrla:3963">
+      <dc:description xml:lang="en">Physical location: UCD Library, UCD Library Special Collections, UCD Letters, UCD L 31</dc:description>
+      <dc:description xml:lang="en">Letter illustrated with sketches, including one entitled 'Simeon the Stileite'.</dc:description>
+      <dc:format xml:lang="en">1 letter 22.75 x 17.75</dc:format>
+      <dc:format>image/jpeg</dc:format>
+      <dc:identifier>OB_1000030_SC</dc:identifier>
+      <dc:identifier>EADseries:IVRLA10-VI:31</dc:identifier>
+      <dc:identifier>ivrla:3963</dc:identifier>
+      <dc:identifier>http://digital.ucd.ie/view/ivrla:3963</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:rights xml:lang="en">© University College Dublin, National University of Ireland, Dublin. Copyright and reproduction rights for this digital resource are held by University College Dublin and administered by UCD Archives, UCD James Joyce Library, Belfield, Dublin 4, Ireland.</dc:rights>
+      <dc:rights xml:lang="en">To use for commercial purposes, please contact the UCD Digital Library</dc:rights>
+      <dc:rights xml:lang="en">Suggested credit: "[Letter from Gerard Manley Hopkins (Oak Hill, Hampstead, N W) to Alexander William Mowbray Baillie, discussing his thoughts on being home; details of a visit to Edgeware; the architecture of a church in Edgeware; his mother not wishing him to fast Encloses 'An Essaye Morall and Political' by Francis Lo Verulam [Francis Bacon, Viscount St Alban] Requests a copy of Baillie's 'Grass is my Garland']," held by UCD Archives. © University College Dublin. Digital content: © University College Dublin, published by UCD Library, University College Dublin &lt;http://digital.ucd.ie/view/ivrla:3963&gt;</dc:rights>
+      <dc:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/">Use of this resource is governed by the Creative Commons - Attribution, Non-Commercial, ShareAlike (BY-NC-SA) license.</dc:rights>
+      <dc:source xml:lang="en">UCD Library, University College Dublin</dc:source>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85025567#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85025568#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85047403#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85033035#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2007000590#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh00005743#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85004931#concept"/>
+      <dc:subject xml:lang="en">Hopkins, Gerard Manley, 1844-1889--Correspondence</dc:subject>
+      <dc:subject xml:lang="en">Hopkins, Gerard Manley, 1844-1889--Family</dc:subject>
+      <dc:subject xml:lang="en">Baillie, Alexander William Mowbray, 1843-1921--Correspondence</dc:subject>
+      <dc:subject xml:lang="en">Hopkins, Gerard Manley, 1844-1889--Anecdotes</dc:subject>
+      <dc:subject xml:lang="en">9 Oak Hill Park, Hampstead (London, England)--geographic</dc:subject>
+      <dc:subject xml:lang="en">Church architecture</dc:subject>
+      <dc:subject xml:lang="en">Church buildings--Conservation and restoration--Edgeware (England)</dc:subject>
+      <dc:subject xml:lang="en">Fasting</dc:subject>
+      <dc:subject xml:lang="en">Correspondence</dc:subject>
+      <dc:subject xml:lang="en">Homecoming</dc:subject>
+      <dc:subject xml:lang="en">Family</dc:subject>
+      <dc:subject xml:lang="en">Correspondence</dc:subject>
+      <dc:subject xml:lang="en">Anecdotes</dc:subject>
+      <dc:title xml:lang="en">[Letter from Gerard Manley Hopkins (Oak Hill, Hampstead, N. W.) to Alexander William Mowbray Baillie, discussing his thoughts on being home; details of a visit to Edgeware; the architecture of a church in Edgeware; his mother not wishing him to fast. Encloses 'An Essaye Morall and Political' by Francis Lo. Verulam [Francis Bacon, Viscount St. Alban]. Requests a copy of Baillie's 'Grass is my Garland'.]</dc:title>
+      <dc:type xml:lang="en">text</dc:type>
+      <dc:type xml:lang="en">still image</dc:type>
+      <dc:type xml:lang="en">Correspondence</dc:type>
+      <dcterms:isPartOf rdf:resource="ivrla:3573"/>
+      <dc:contributor rdf:resource="http://viaf.org/viaf/64062958" rdfs:label="Author"/>
+      <dcterms:spatial>
+         <wgs84:lat>51.5566284</wgs84:lat>
+         <wgs84:long>-0.183364848152513</wgs84:long>
+      </dcterms:spatial>
+      <edm:type>IMAGE</edm:type>
+   </ore:Proxy>
+   <edm:EuropeanaAggregation rdf:about="ivrla:3963_EuropeanaAggregation">
+      <edm:aggregatedCHO rdf:resource="ivrla:3963"/>
+      <edm:country>Ireland</edm:country>
+      <edm:language>en</edm:language>
+      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+   </edm:EuropeanaAggregation>
+   <svcs:Service rdf:about="https://iiif.ucd.ie/loris/ivrla:3964">
+      <dcterms:conformsTo rdf:resource="http://iiif.io/api/image"/>
+      <dcterms:isReferencedBy rdf:resource="https://data.ucd.ie/api/img/manifests/ivrla:3963"/>
+      <doap:implements rdf:resource="http://iiif.io/api/image/2/level2.json"/>
+   </svcs:Service>
+</rdf:RDF>

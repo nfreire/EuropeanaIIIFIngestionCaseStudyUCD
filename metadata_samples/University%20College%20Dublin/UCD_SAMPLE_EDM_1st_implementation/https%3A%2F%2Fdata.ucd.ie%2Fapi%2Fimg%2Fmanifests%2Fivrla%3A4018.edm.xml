@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:crm="http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.0.2_english_label.rdfs#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:doap="http://usefulinc.com/ns/doap#"
+         xmlns:edm="http://www.europeana.eu/schemas/edm/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+         xmlns:ore="http://www.openarchives.org/ore/terms/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:svcs="http://rdfs.org/sioc/services#"
+         xmlns:wgs84="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:xalan="http://xml.apache.org/xalan"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <edm:ProvidedCHO rdf:about="ivrla:4018"/>
+   <edm:WebResource rdf:about="https://iiif.ucd.ie/loris/ivrla:4019/full/full/0/default.jpg">
+      <dc:format>image/jpeg</dc:format>
+      <dcterms:extent xml:lang="en">1 still image : digital</dcterms:extent>
+      <dcterms:extent>20 MB</dcterms:extent>
+      <dcterms:extent>3275x2110 pixels</dcterms:extent>
+      <dcterms:extent>11.5 x 18 (cm)</dcterms:extent>
+      <dcterms:isReferencedBy rdf:resource="https://data.ucd.ie/api/img/manifests/ivrla:4018"/>
+      <svcs:has_service rdf:resource="https://iiif.ucd.ie/loris/ivrla:4019"/>
+   </edm:WebResource>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85137360#concept">
+      <skos:prefLabel xml:lang="en">Trials (Impostors and imposture)</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh2008112831#concept">
+      <skos:prefLabel xml:lang="en">Theater</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85088769#concept">
+      <skos:prefLabel xml:lang="en">Music</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+      <skos:prefLabel xml:lang="en">Correspondence</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+      <skos:prefLabel xml:lang="en">Correspondence</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh85137027#concept">
+      <skos:prefLabel xml:lang="en">Transportation</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh00005743#concept">
+      <skos:prefLabel xml:lang="en">Family</skos:prefLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://id.loc.gov/authorities/subjects/sh00005818#concept">
+      <skos:prefLabel xml:lang="en">Friends and associates</skos:prefLabel>
+   </skos:Concept>
+   <ore:Aggregation rdf:about="ivrla:4018_Aggregation">
+      <edm:aggregatedCHO rdf:resource="ivrla:4018"/>
+      <edm:dataProvider>UCD Library</edm:dataProvider>
+      <edm:dataProvider>University College Dublin</edm:dataProvider>
+      <edm:isShownAt rdf:resource="https://digital.ucd.ie/view/ivrla:4018"/>
+      <edm:isShownBy rdf:resource="https://iiif.ucd.ie/loris/ivrla:4019/full/full/0/default.jpg"/>
+      <edm:object rdf:resource="https://iiif.ucd.ie/loris/ivrla:4019/full/600,/0/default.jpg"/>
+      <edm:provider>University College Dublin</edm:provider>
+      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+   </ore:Aggregation>
+   <ore:Proxy rdf:about="ivrla:4018">
+      <dc:description xml:lang="en">Physical location: UCD Library, UCD Library Special Collections, UCD Letters, [UCD L 41]</dc:description>
+      <dc:description xml:lang="en">This letter is published in 'Further letters of Gerard Manley Hopkins, including his correspondence with Coventry Patmore', ed. Claude Colleer Abbott, 2nd ed. (London: OUP, 1956).</dc:description>
+      <dc:format xml:lang="en">1 letter 11.5 x 18</dc:format>
+      <dc:format>image/jpeg</dc:format>
+      <dc:identifier>OB_1000040_SC</dc:identifier>
+      <dc:identifier>EADseries:IVRLA10-VI:41</dc:identifier>
+      <dc:identifier>ivrla:4018</dc:identifier>
+      <dc:identifier>http://digital.ucd.ie/view/ivrla:4018</dc:identifier>
+      <dc:language>en</dc:language>
+      <dc:rights xml:lang="en">© University College Dublin, National University of Ireland, Dublin. Copyright and reproduction rights for this digital resource are held by University College Dublin and administered by UCD Archives, UCD James Joyce Library, Belfield, Dublin 4, Ireland.</dc:rights>
+      <dc:rights xml:lang="en">To use for commercial purposes, please contact the UCD Digital Library</dc:rights>
+      <dc:rights xml:lang="en">Suggested credit: "[Letter from Gerard Manley Hopkins (Stonyhurst, Whalley) to Alexander William Mowbray Baillie, referring to a visit to his family; a failed attempt to visit Baillie; the case of 'The Claimant'; Christmas holidays at the school; a performance of 'MacBeth'; and several acquaintances]," held by UCD Archives. © University College Dublin. Digital content: © University College Dublin, published by UCD Library, University College Dublin &lt;http://digital.ucd.ie/view/ivrla:4018&gt;</dc:rights>
+      <dc:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/">Use of this resource is governed by the Creative Commons - Attribution, Non-Commercial, ShareAlike (BY-NC-SA) license.</dc:rights>
+      <dc:source xml:lang="en">UCD Library, University College Dublin</dc:source>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85137360#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008112831#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85088769#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85033035#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85137027#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh00005743#concept"/>
+      <dc:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh00005818#concept"/>
+      <dc:subject xml:lang="en">Orton, Arthur, 1834-1898</dc:subject>
+      <dc:subject xml:lang="en">Doughty-Tichborne, Roger Charles, 1829-1854</dc:subject>
+      <dc:subject xml:lang="en">Hopkins, Gerard Manley, 1844-1889--Correspondence</dc:subject>
+      <dc:subject xml:lang="en">Baillie, Alexander William Mowbray, 1843-1921--Correspondence</dc:subject>
+      <dc:subject xml:lang="en">Hopkins, Gerard Manley, 1844-1889--Family</dc:subject>
+      <dc:subject xml:lang="en">Hopkins, Gerard Manley, 1844-1889--Friends and associates</dc:subject>
+      <dc:subject xml:lang="en">Trials (Impostors and imposture)--England</dc:subject>
+      <dc:subject xml:lang="en">Theater--England</dc:subject>
+      <dc:subject xml:lang="en">Music--England</dc:subject>
+      <dc:subject xml:lang="en">Correspondence</dc:subject>
+      <dc:subject xml:lang="en">Transportation--London (England)</dc:subject>
+      <dc:subject xml:lang="en">Family</dc:subject>
+      <dc:subject xml:lang="en">Friends and associates</dc:subject>
+      <dc:title xml:lang="en">[Letter from Gerard Manley Hopkins (Stonyhurst, Whalley) to Alexander William Mowbray Baillie, referring to a visit to his family; a failed attempt to visit Baillie; the case of 'The Claimant'; Christmas holidays at the school; a performance of 'MacBeth'; and several acquaintances.]</dc:title>
+      <dc:type xml:lang="en">text</dc:type>
+      <dc:type xml:lang="en">Correspondence</dc:type>
+      <dcterms:isPartOf rdf:resource="ivrla:3573"/>
+      <dc:contributor rdf:resource="http://viaf.org/viaf/64062958" rdfs:label="Author"/>
+      <edm:type>TEXT</edm:type>
+   </ore:Proxy>
+   <edm:EuropeanaAggregation rdf:about="ivrla:4018_EuropeanaAggregation">
+      <edm:aggregatedCHO rdf:resource="ivrla:4018"/>
+      <edm:country>Ireland</edm:country>
+      <edm:language>en</edm:language>
+      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+   </edm:EuropeanaAggregation>
+   <svcs:Service rdf:about="https://iiif.ucd.ie/loris/ivrla:4019">
+      <dcterms:conformsTo rdf:resource="http://iiif.io/api/image"/>
+      <dcterms:isReferencedBy rdf:resource="https://data.ucd.ie/api/img/manifests/ivrla:4018"/>
+      <doap:implements rdf:resource="http://iiif.io/api/image/2/level2.json"/>
+   </svcs:Service>
+</rdf:RDF>

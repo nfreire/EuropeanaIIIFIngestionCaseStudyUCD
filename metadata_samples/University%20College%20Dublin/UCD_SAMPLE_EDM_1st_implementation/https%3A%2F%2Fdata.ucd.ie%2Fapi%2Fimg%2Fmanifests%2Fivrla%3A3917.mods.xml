@@ -1,0 +1,180 @@
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+  <titleInfo>
+    <title>[Letter from James Roe to John D'Alton (48 Summerhill, Dublin), referring him to various sources of information for research on the history of Cashel.]</title>
+  </titleInfo>
+  <name type="personal">
+    <namePart>Curran, Constantine Peter, 1880-1972</namePart>
+    <role>
+      <roleTerm authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/fmo" type="code">fmo</roleTerm>
+      <roleTerm authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/fmo" type="text">Former owner</roleTerm>
+    </role>
+  </name>
+  <name type="personal">
+    <namePart>Roe, James</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/aut">aut</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/aut">Author</roleTerm>
+    </role>
+  </name>
+  <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/55328554">
+    <namePart>D'Alton, John, 1792-1867</namePart>
+    <role>
+      <roleTerm type="code" authority="marcrelator" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/rcp">rcp</roleTerm>
+      <roleTerm authority="marcrelator" type="text" authorityURI="http://id.loc.gov/vocabulary/relators#conceptscheme" valueURI="http://id.loc.gov/vocabulary/relators/rcp">Recipient</roleTerm>
+    </role>
+  </name>
+  <typeOfResource manuscript="yes">text</typeOfResource>
+  <genre authority="bgtchm" authorityURI="http://memory.loc.gov/ammem/techdocs/genre.html">Correspondence</genre>
+  <originInfo>
+    <dateCreated>22 November 1834</dateCreated>
+    <dateCreated encoding="iso8601" keyDate="yes">1834-11-22</dateCreated>
+  </originInfo>
+  <subject displayLabel="Recipient location">
+    <geographic>48 Summerhill, Dublin, Ireland</geographic>
+    <cartographics authority="OpenStreetMap" authorityURI="http://nominatim.openstreetmap.org/" valueURI="urn:osm:place_id:53298825">
+      <coordinates>53.3553532,-6.2532131</coordinates>
+    </cartographics>
+  </subject>
+  <language>
+    <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+    <languageTerm type="text" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+  </language>
+  <physicalDescription>
+    <extent>1 letter</extent>
+    <extent unit="cm">19.25 x 23.25</extent>
+  </physicalDescription>
+  <subject>
+    <name type="personal">
+      <namePart>O'Brien, John</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal">
+      <namePart>MacDonnell, -, Doctor</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal">
+      <namePart>Mansergh, Nicholas</namePart>
+    </name>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85061227#concept">
+    <geographic>Cashel (Tipperary, Ireland)</geographic>
+    <topic>History</topic>
+    <topic>Sources</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+    <name type="personal">
+      <namePart>Roe, James</namePart>
+    </name>
+    <topic>Correspondence</topic>
+  </subject>
+  <subject authority="lcsh" authorityURI="http://id.loc.gov/authorities/subjects#conceptscheme" valueURI="http://id.loc.gov/authorities/subjects/sh85033035#concept">
+    <name type="personal" authority="viaf" authorityURI="http://viaf.org/" valueURI="http://viaf.org/viaf/55328554">
+      <namePart>D'Alton, John, 1792-1867</namePart>
+    </name>
+    <topic>Correspondence</topic>
+  </subject>
+  <identifier type="hdl" invalid="yes">hdl:10151/OB_1000022_SC</identifier>
+  <identifier type="local">OB_1000022_SC</identifier>
+  <identifier type="EADseries">IVRLA10-V:23</identifier>
+  <location>
+    <physicalLocation type="institution">UCD Library</physicalLocation>
+    <physicalLocation type="repository">UCD Library Special Collections</physicalLocation>
+    <physicalLocation type="collection">UCD Letters</physicalLocation>
+    <physicalLocation type="originalRef">UCD L 23</physicalLocation>
+  </location>
+  <recordInfo>
+    <recordCreationDate encoding="iso8601">2005-11-25</recordCreationDate>
+    <recordContentSource>UCD Library, University College Dublin</recordContentSource>
+    <recordOrigin>Descriptions created by IVRLA project staff, UCD Library, University College Dublin.</recordOrigin>
+    <languageOfCataloging>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">eng</languageTerm>
+      <languageTerm type="code" authority="iso639-3" authorityURI="http://www.lexvo.org" valueURI="http://lexvo.org/id/iso639-3/eng">English</languageTerm>
+      <scriptTerm type="code" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latn</scriptTerm>
+      <scriptTerm type="text" authority="iso15924" authorityURI="http://www.lexvo.org" valueURI="http://www.lexvo.org/page/script/Latn">Latin</scriptTerm>
+    </languageOfCataloging>
+  </recordInfo>
+  <accessCondition type="useAndReproduction" displayLabel="Copyright of digital resource">© University College Dublin, National University of Ireland, Dublin. Copyright and reproduction rights for this digital resource are held by University College Dublin and administered by UCD Archives, UCD James Joyce Library, Belfield, Dublin 4, Ireland.</accessCondition>
+  <accessCondition type="useAndReproduction" displayLabel="Creative Commons licence" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Use of this resource is governed by the terms and conditions of the Creative Commons "Attribution-NonCommercial-ShareAlike" License &lt;http://creativecommons.org/licenses/by-nc-sa/4.0/&gt;</accessCondition>
+  <accessCondition type="useAndReproduction" displayLabel="Commercial use details" xlink:href="http://digital.ucd.ie/terms/">To use for commercial purposes, please contact the UCD Digital Library</accessCondition>
+  <accessCondition type="useAndReproduction" displayLabel="Suggested credit">"[Letter from James Roe to John D'Alton (48 Summerhill, Dublin), referring him to various sources of information for research on the history of Cashel]," held by UCD Archives. © University College Dublin. Digital content: © University College Dublin, published by UCD Library, University College Dublin &lt;http://digital.ucd.ie/view/ivrla:3917&gt;</accessCondition>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>UCD Letters</title>
+    </titleInfo>
+    <typeOfResource collection="yes">text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3573</identifier>
+    <identifier type="local">EAD_0000012_SC</identifier>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from James Roe to John D'Alton (48 Summerhill, Dublin), referring him to various sources of information for research on the history of Cashel</title>
+      <subTitle>[Page 1]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3918</identifier>
+    <identifier type="local">SC_PM_1000069</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">42</extent>
+      <extent unit="pixels">4221x3477</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>19.25 x 23.25 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from James Roe to John D'Alton (48 Summerhill, Dublin), referring him to various sources of information for research on the history of Cashel</title>
+      <subTitle>[Pages 2 &amp; 3]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3919</identifier>
+    <identifier type="local">SC_PM_1000070</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">84</extent>
+      <extent unit="pixels">4231x6899</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>38.5 x 23.25 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <relatedItem type="constituent">
+    <titleInfo>
+      <title>Letter from James Roe to John D'Alton (48 Summerhill, Dublin), referring him to various sources of information for research on the history of Cashel</title>
+      <subTitle>[Recipient address]</subTitle>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="uri">info:fedora/ivrla:3920</identifier>
+    <identifier type="local">SC_PM_1000071</identifier>
+    <physicalDescription>
+      <form authority="marcform" authorityURI="http://www.loc.gov/standards/valuelist/marcform.html">electronic</form>
+      <extent>1 still image : digital</extent>
+      <extent unit="MB">42</extent>
+      <extent unit="pixels">3477x4231</extent>
+      <internetMediaType>image/tiff</internetMediaType>
+      <internetMediaType>image/jp2</internetMediaType>
+      <internetMediaType>image/jpeg</internetMediaType>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+      <note type="compression" displayLabel="File details" typeURI="http://id.loc.gov/vocabulary/preservation/eventType/com">Original file in TIFF format; a JPEG2000 file has been derived from the original using Kakadu software; JPEG files in various resolutions have been derived for the original using ImageMagick software.</note>
+    </physicalDescription>
+    <physicalDescription displayLabel="Original item">
+      <extent>19.25 x 23.25 (cm)</extent>
+    </physicalDescription>
+  </relatedItem>
+  <identifier type="uri">info:fedora/ivrla:3917</identifier>
+</mods>
